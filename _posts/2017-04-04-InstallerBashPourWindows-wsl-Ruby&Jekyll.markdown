@@ -8,7 +8,7 @@ Ajouter Bash, Ruby et Jekill sur windows 10
 
 Comment installer la version Bash d'Ubuntu sur windows 10 :
 
-https://msdn.microsoft.com/en-us/commandline/wsl/install_guide
+[Documentation officielle][Official-doc]
 
 1. Aller dans Parametres> Mise à jour et sécurité > Pour les développeurs  : Activer le mode developpeur ( l'ordinateur va devoir redemarrer et installer de nouveaux packages
 2. Aller dans la barre de recherche et tapez : fonctionalités windows ( vers la page : Activer ou désactiver les fonctionnalités windows )
@@ -37,3 +37,4 @@ Solution : Désactiver le firewall ( zonealarm , etc..)
 
 
 
+[Official-doc] : https://msdn.microsoft.com/en-us/commandline/wsl/install_guide
