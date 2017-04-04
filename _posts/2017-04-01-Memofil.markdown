@@ -1,0 +1,17 @@
+---
+layout: post
+title:  "Memofil : Pour retrouver le fil de ses idées"
+date:   2017-04-01 00:09:36 +0200
+categories: Présentation
+---
+
+Mémofil : Notes d'information et de messages d'erreur
+Retrouver le fil de ses idées
+
+{% highlight ruby %}
+def print_hi(name)
+  puts "Hi, #{name}"
+end
+print_hi('Tom')
+#=> prints 'Hi, Tom' to STDOUT.
+{% endhighlight %}
