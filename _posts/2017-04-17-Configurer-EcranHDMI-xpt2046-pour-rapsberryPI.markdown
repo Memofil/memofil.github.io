@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Configurer l'ecran HDMI 5 pouces avec touche controller XPT2046 pour Rapsberry Pi"
+title:  "Configurer l'écran HDMI 5 pouces avec touche controller XPT2046 pour Rapsberry Pi"
 date:   2017-04-17 10:37:00 +0200
 categories: raspberry pi raspbian
 ---
@@ -63,3 +63,5 @@ dtoverlay=w1-gpio-pullup,gpiopin=4,extpullup=1
 
 [source wiki][source-wiki]
 [source-wiki] : https://www.elecrow.com/wiki/index.php?title=HDMI_Interface_5_Inch_800x480_TFT_Display
+
+http://www.raspberrypiwiki.com/index.php/Touchscreen_calibration
