@@ -6,6 +6,7 @@ categories: Git Linux Terminal
 ---
 
 Installer SSMTP, mail et mpack pour les pieces jointes
+
 {% highlight ruby %}
 sudo apt-get install ssmtp
 sudo apt-get install mailutils
