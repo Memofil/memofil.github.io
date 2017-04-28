@@ -118,6 +118,10 @@ Envoyer les fichiers sur GitHub sur la branche master du dépot origin
 {% highlight ruby %}
 git push origin master
 {% endhighlight %}
+ou simplement
+{% highlight ruby %}
+git push 
+{% endhighlight %}
 
 
 
