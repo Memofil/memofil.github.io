@@ -32,7 +32,7 @@ exclude:
   - Gemfile.lock
 
 #Pour pouvoir publier des articles à date future
-future:true
+future: true
 
 #Timezone
-timezone:Europe/Paris
+timezone: Europe/Paris
