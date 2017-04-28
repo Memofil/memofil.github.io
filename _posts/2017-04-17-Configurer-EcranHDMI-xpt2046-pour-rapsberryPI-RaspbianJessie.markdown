@@ -63,16 +63,16 @@ sudo apt-get install -y xvkbd
 
 
  
-BUG:Problème de calibration sous raspbien Jessie
- L'écran tactile n'est pas bien calibré malgré les installations.
+BUG:
+Problème de calibration sous raspbien Jessie
+L'écran tactile n'est pas bien calibré malgré les installations.
  
- Voir https://www.raspberrypi.org/forums/viewtopic.php?t=143581
- Une solution est donnée :
+Une solution est donnée :
  
- https://www.raspberrypi.org/forums/viewtopic.php?f=44&t=173993&p=1112311#p1112311
+ [https://www.raspberrypi.org/forums/viewtopic.php?f=44&t=173993&p=1112311#p1112311](https://www.raspberrypi.org/forums/viewtopic.php?f=44&t=173993&p=1112311#p1112311)
  
  Il faut réinstaller les drivers de l'ecran en suivant les instructions du git :
- https://github.com/goodtft/LCD-show
+ [https://github.com/goodtft/LCD-show](https://github.com/goodtft/LCD-show)
  
 La procédure : 
  
@@ -90,14 +90,12 @@ sudo reboot
 {% endhighlight %}
  
  
-[Wiki](http://www.raspberrypiwiki.com/index.php/Touchscreen_calibration)
+A voir : 
 
-[Source-Officielle](https://www.elecrow.com/wiki/index.php?title=HDMI_Interface_5_Inch_800x480_TFT_Display)
+- [Wiki](http://www.raspberrypiwiki.com/index.php/Touchscreen_calibration)
 
-[source][source]
-[source]: https://www.jeffgeerling.com/blog/2016/review-elecrow-hdmi-5-800x480-tft-display-xpt2046-touch-controller
+- [Source-Officielle](https://www.elecrow.com/wiki/index.php?title=HDMI_Interface_5_Inch_800x480_TFT_Display)
 
-[source wiki][source-wiki]
-[source-wiki] : https://www.elecrow.com/wiki/index.php?title=HDMI_Interface_5_Inch_800x480_TFT_Display
 
-http://www.raspberrypiwiki.com/index.php/Touchscreen_calibration
+- [Aussi](https://www.jeffgeerling.com/blog/2016/review-elecrow-hdmi-5-800x480-tft-display-xpt2046-touch-controller)
+
