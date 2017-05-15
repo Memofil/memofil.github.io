@@ -35,21 +35,21 @@ network={
 
 Si l'on dispose de plusieurs accès wifi, le réseau prioritaire est sélectionné via la variable " priority" sera celui ayant le chiffre le plus élevé.
 
-Pour des questions de sécurité évidentes ( avec un sudo automatique, n'importe qui ayant acces à la raspberry pi peut découvrir tous les mots de passe associés aux réseaux WIFI), on peut ne pas vouloir renseigner son mot de passe en clair, on peut alors utiliser une version cryptée de son mot de passe via la passphrase :
+Pour des questions de sécurité évidentes ( avec un sudo automatique, n'importe qui ayant acces à la raspberry pi peut découvrir tous les mots de passe associés aux réseaux WIFI), on peut ne pas vouloir renseigner son mot de passe en clair, il faut alors utiliser une version cryptée de son mot de passe via la passphrase. Dans le terminal, taper :
 
 {% highlight ruby %}
 wpa_passphrase Mon_réseau
 {% endhighlight %}
 Le terminal vous demandera ensuite de renseigner le mot de passe associé au réseau wifi
 
-Remarque : Mon_réseau ne doit pas comporter d'espace et doit faire au moins 8 caractères, sinon la génération de la passphrase ne sera pas possible. Il faut donc changer le nom dans ce cas, sous peine d'avoir ce message d'erreur :
+Remarque : Mon_réseau ne doit pas comporter d'espace et doit faire au moins 8 caractères, sinon la création de la passphrase ne sera pas possible. Il faut donc changer le nom dans ce cas, sous peine d'avoir ce message d'erreur :
 
 {% highlight ruby %}
 wpa_passphrase Mon réseau
 Passphrase must be 8..63 characters
 {% endhighlight %}
 
-Si tout se passe bien vous devrier avoir la nouvelle configuration protégée à insérer/ remplacer dans votre fichier wpa_supplicant.conf :
+Si tout se passe bien vous devriez avoir la nouvelle configuration "sécurisée" qui s'imprime dans le terminal :
 {% highlight ruby %}
 network={
 	ssid="Mon_réseau"
@@ -71,16 +71,5 @@ network={
 }
 {% endhighlight %}
 
-
-
-
-
-
-
-
-
-
-[source][source]
-[source]: https://www.raspberrypi.org/documentation/configuration/wireless/wireless-cli.md
 
 
