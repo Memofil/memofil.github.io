@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Accéder à son raspberry pi depuis internet"
-date:   2017-05-15 12:30:00 +0200
+date:   2017-05-15 18:30:00 +0200
 categories: raspberry Linux Terminal 
 ---
 
@@ -17,16 +17,9 @@ Chaque routeur à une interface différente, mais généralement la procédure e
 1)
 
 {% highlight ruby %}
-sudo apt-get install unison
+
 {% endhighlight %}
 
 
-
-
-
-
-
-[source][source]
-[source]: http://www.raspberry-projects.com/pi/software_utilities/email/ssmtp-to-send-emails
 
 
