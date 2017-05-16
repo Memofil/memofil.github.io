@@ -21,7 +21,7 @@ Chaque routeur à une interface différente, mais généralement la procédure e
 Port externe : 1234 ( peut etre de 0 à 9999 )
 Protocole : TCP 
 IP DE DESTINATION : 192.168.X.XXX ( par ex :  192.168.0.123, il faudra configurer son raspberry pi en ip fixe )
-Por interne : 22 ( le port 22 est par defaut celui qui fonctionne avec ssh sous rapsbian, mais il est possible de le modifier pour plus de sécurité)
+Port interne : 22 ( le port 22 est par defaut celui qui fonctionne avec ssh sous Raspbian Jessie, mais il est possible de le changer en modifiant le fichier  sshd_config )
 {% endhighlight %}
 
 3) Une fois la redirection effectuée, redemarrer la freebox et vérifier que les modifications sont bien actives.
