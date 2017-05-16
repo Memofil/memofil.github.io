@@ -9,7 +9,7 @@ Afin de configurer la connexion wifi de son raspberry pi,
 
 1)Quels sont les réseaux wifi détectés ?
 {% highlight ruby %}
-sudo aptsudo iwlist wlan0 scan | grep ESSID
+sudo iwlist wlan0 scan | grep ESSID
 {% endhighlight %}
 
 2)On verifie que notre réseau est bien dans la liste
