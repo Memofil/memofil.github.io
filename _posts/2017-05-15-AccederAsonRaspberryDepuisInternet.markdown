@@ -15,6 +15,7 @@ Dans mon cas, je vais utiliser le routeur TP-LINK Archer MR200 avec une connexio
 Chaque routeur à une interface différente, mais généralement la procédure est la même.
 
 1) Se connecter à son compte Freebox et se rendre à la page Ma Freebox > Configurer mon routeur > Redirections / Baux DHCP
+
 2) Au niveaux des Redirections de ports renseigner les ports que vous souhaitez ouvrir :
 
 {% highlight ruby %}
@@ -26,9 +27,12 @@ Port interne : 22 ( le port 22 est par defaut celui qui fonctionne avec ssh sous
 
 3) Une fois la redirection effectuée, redemarrer la freebox et vérifier que les modifications sont bien actives.
 
+
 Préparer son raspberry
-1)Ouvrir la connexion ssh via raspi-config
-2)Connaitre l'adresse ip publique de la connexion internet du raspberry, via http://www.whatsmyip.org/ ou sites équivalent. L'adresse est alors du type "92.190.45.32" ( à ne pas confondre avec IP locale, du type 192.168.0.10)
+
+1) Ouvrir la connexion ssh via raspi-config
+
+2) Connaitre l'adresse ip publique de la connexion internet du raspberry, via http://www.whatsmyip.org/ ou sites équivalent. L'adresse est alors du type "92.190.45.32" ( à ne pas confondre avec IP locale, du type 192.168.0.10)
 
 
 Connexion à distance via ssh
@@ -42,8 +46,7 @@ ssh pi@92.190.45.32 -p 1234
 
 Il suffit alors d'entrer votre mot de passe et voila vous etes connecté!
 
-Remarque : 
--Il est possible d'avoir une adresse perso avec no-ip.com, qui viendra remplacer l'adresse 92.190.45.30. no-ip va se charger de faire le transfer, ainsi l'adresse de ip publique du pc n'est pas en claire pour les pc distant qui s'y connectent.
+Remarque : Il est possible d'avoir une adresse perso avec no-ip.com, qui viendra remplacer l'adresse 92.190.45.30. no-ip va se charger de faire le transfer, ainsi l'adresse de ip publique du pc n'est pas en claire pour les pc distant qui s'y connectent.
 
 
 
