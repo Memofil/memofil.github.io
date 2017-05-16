@@ -11,10 +11,9 @@ Si l'on souhaite acceder à son raspberry pi en dehors de son réseau local, c'e
 
 <h3>Configuration du routeur</h3>
 
-Dans mon cas, je vais utiliser le routeur TP-LINK Archer MR200 avec une connexion internet Freebox
 Chaque routeur à une interface différente, mais généralement la procédure est la même.
 
-1) Se connecter à son compte Freebox et se rendre à la page Ma Freebox > Configurer mon routeur > Redirections / Baux DHCP
+1) Se connecter à son compte Freebox et se rendre à la page : Ma Freebox > Configurer mon routeur > Redirections / Baux DHCP
 
 2) Au niveaux des Redirections de ports, renseigner les ports que vous souhaitez ouvrir :
 
@@ -46,7 +45,7 @@ ssh pi@92.190.45.32 -p 1234
 
 Il suffit alors d'entrer votre mot de passe et voila vous etes connecté!
 
-Remarque : Il est possible d'avoir une adresse perso avec no-ip.com, qui viendra remplacer l'adresse 92.190.45.30. no-ip va se charger de faire le transfer, ainsi l'adresse de ip publique du pc n'est pas en claire pour les pc distant qui s'y connectent.
+<strong>Remarque : </strong> Il est possible d'avoir une adresse perso avec no-ip.com, qui viendra remplacer l'adresse 92.190.45.30. no-ip va se charger de faire le transfer, ainsi l'IP publique du routeur n'est pas en claire pour les pc distant qui s'y connectent.
 
 
 
