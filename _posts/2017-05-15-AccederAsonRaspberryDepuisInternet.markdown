@@ -45,7 +45,7 @@ ssh pi@92.190.45.32 -p 1234
 
 Il suffit alors d'entrer votre mot de passe et voila vous etes connecté!
 
-<strong>Remarque : </strong> Il est possible d'avoir une adresse perso avec no-ip.com, qui viendra remplacer l'adresse 92.190.45.30. no-ip va se charger de faire le transfer, ainsi l'IP publique du routeur n'est pas en claire pour les pc distant qui s'y connectent.
+<strong>Remarque : </strong> Il est possible d'avoir une adresse perso avec <a href="https://www.noip.com/" title="no-ip">no-ip.com</a></p> qui viendra remplacer l'adresse 92.190.45.30. no-ip va se charger de faire le transfer, ainsi l'IP publique du routeur n'est pas en claire pour les pc distant qui s'y connectent.
 
 
 
