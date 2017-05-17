@@ -30,15 +30,15 @@ Ajouter les lignes suivant à la fin du fichier :
 interface eth0
 static ip_address=192.168.1.80/24
 static routers=192.168.0.254
-static domain_name_servers=208.67.222.222,208.67.220.220
+static domain_name_servers=208.67.222.222 208.67.220.220
 interface wlan0
 static ip_address=192.168.1.81/24
 static routers=192.168.0.254
-static domain_name_servers=208.67.222.222,208.67.220.220
+static domain_name_servers=208.67.222.222 208.67.220.220
 
 {% endhighlight %}
 
-enfin il faut faire un "sudo reboot".
+enfin il faut faire un <code>sudo reboot</code> ou bien (plus rapide) <code>sudo systemctl daemon-reload</code>.
 
 <strong>Remarques: </strong>
  - Noter que l'on peut configurer un adresse ip statique différente selon que l'on soit connecté par cable ethernet ou bien wifi
