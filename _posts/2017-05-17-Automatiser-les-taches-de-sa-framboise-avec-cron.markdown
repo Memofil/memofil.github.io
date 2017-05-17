@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Automatiser les taches de sa framboise avec cron"
+title:  "Automatiser les taches de sa framboise avec Cron"
 date:   2017-05-17 18:30:00 +0200
 categories: Raspberry Pi Cron Linux Terminal 
 ---
@@ -19,7 +19,7 @@ Afin de planifier des taches, il faut editer la cron table :
 crontab -e
 {% endhighlight %}
 
-Si vous souhaitez que cron exceute le script <code>/home/pi/backup.sh</code> toute les  minutes, on écrira à la fin du fichier :
+Si vous souhaitez que Cron execute le script <code>/home/pi/backup.sh</code> toute les  minutes, on écrira à la fin du fichier :
 
 {% highlight ruby %}
 #execution du backup de la base historique toutes les minutes
