@@ -11,7 +11,7 @@ Si l'on souhaite acceder à son raspberry pi en dehors de son réseau local, c'e
 
 Configuration du routeur
 
-Dans mon cas, je vais utiliser le routeur TP-LINK Archer MR200 avec une connexion internet 4G Free mobile.
+Dans mon cas, je vais utiliser le routeur TP-LINK Archer MR200 avec une connexion internet Freebox.
 Chaque routeur à une interface différente, mais généralement la procédure est la même.
 
 1)
