@@ -19,7 +19,7 @@ Afin de planifier des taches, il faut editer la cron table :
 crontab -e
 {% endhighlight %}
 
-A la fin du fichier, vous verrez normalement des exemples, si vous souhaitez que cron exceute le script <code>/home/pi/backup.sh</code> toute les  minutes, on écrira :
+Si vous souhaitez que cron exceute le script <code>/home/pi/backup.sh</code> toute les  minutes, on écrira à la fin du fichier :
 
 {% highlight ruby %}
 #execution du backup de la base historique toutes les minutes
