@@ -18,8 +18,6 @@ On obtient alors une adresse du type :
 {% endhighlight %}
 
 
-
-
 Nous pouvons ensuite configurer l'IP statique. Pour cela, il faut modifier le fichier "dhcpcd.conf" :
 
 {% highlight ruby %}
@@ -40,13 +38,15 @@ static domain_name_servers=208.67.222.222,208.67.220.220
 
 {% endhighlight %}
 
+enfin il faut faire un "sudo reboot".
+
 <strong>Remarques: </strong>
  - Noter que l'on peut configurer un adresse ip statique différente selon que l'on soit connecté par cable ethernet ou bien wifi
  - Ne pas oublier /24 à la fin de l'adresse choisie.
- - La création de l'IP fixe a corrompu l'acces à internet de la raspberry pi ( apparement sur Jessie uniquement, Wheezy ne serait pas concerné -> voir  .
- Une solution est de modifié le DNS de sortie avec un nameserver google 8.8.8.8 ou openDNS 208.67.222.222 :
+ - static domain_name_server peut prendre différentes valeures, il y a le nameserver google 8.8.8.8 ou encore openDNS 208.67.222.222
  
 <h4><strong>Sources:</strong></h4>
  
 <a href="https://raspberrypi.stackexchange.com/questions/37920/how-do-i-set-up-networking-wifi-static-ip-address">how-do-i-set-up-networking-wifi-static-ip-address</a>
+<
 <a href="https://www.raspberrypi.org/forums/viewtopic.php?f=36&t=127183" target="_Blanck">https://www.raspberrypi.org/forums/viewtopic.php?f=36&t=127183</a>
