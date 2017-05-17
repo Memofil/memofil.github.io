@@ -46,7 +46,11 @@ enfin il faut faire un "sudo reboot".
  - static domain_name_server peut prendre différentes valeures, il y a le nameserver google 8.8.8.8 ou encore openDNS 208.67.222.222
  
 <h4><strong>Sources:</strong></h4>
- 
+ <ul>
+ <li>
 <a href="https://raspberrypi.stackexchange.com/questions/37920/how-do-i-set-up-networking-wifi-static-ip-address">how-do-i-set-up-networking-wifi-static-ip-address</a>
-<
+</li>
+<li>
 <a href="https://www.raspberrypi.org/forums/viewtopic.php?f=36&t=127183" target="_Blanck">https://www.raspberrypi.org/forums/viewtopic.php?f=36&t=127183</a>
+</li>
+</ul>
