@@ -5,50 +5,47 @@ date:   2017-04-28 12:30:00 +0200
 categories: Unison Linux Terminal 
 ---
 
-Installer Unison
+<h3>Installer Unison</h3>
 {% highlight ruby %}
 sudo apt-get install unison
 {% endhighlight %}
 
-Afin de configurer le serveur d'envoi, il faut éditer le fichier sstmp.conf
-
+Attention, pour qu'unison fonctionne correctement , il faut que les deux machines que vous souhaitez Synchroniser dispose de la meme version d'unison.
+Si les pc n'ont pas le même systeme d'exploitation, les dépots sont généralement différents et vous pouvez avoir un message d'erreur du type : 
 {% highlight ruby %}
-sudo nano /etc/ssmtp/ssmtp.conf 
+Contacting server...
+Fatal error: Received unexpected header from the server:
+ expected "Unison 2.40\n" but received "Unison 2.48\n\000\000\000\000\017", 
+which differs at "Unison 2.48".
+This can happen because you have different versions of Unison
+installed on the client and server machines, or because
+your connection is failing and somebody is printing an error
+message, or because your remote login shell is printing
+something itself before starting Unison.
 {% endhighlight %}
 
-Ajouter alors les infos de comptes:
+Dans ce cas, il faut installer Unison manuellement. A defaut de trouver une version déja compilée pour notre raspberry, nous allons partir du code source.
+Comme Unison est ecrit en OCaml, il est necessaire d'avoir Ocaml pour pouvoir compiler.
 
 {% highlight ruby %}
-root=postmaster
-mailhub=smtp.gmail.com:587
-hostname=raspberrypi
-AuthUser=MonAdresse@gmail.com
-AuthPass=MotdePasseGmail
-FromLineOverride=YES
-UseSTARTTLS=YES
-{% endhighlight %}
-
-Attention, le mot de passe sera en clair! Conseil pour plus de sécurité : ouvrir une messagerie spéciale pour le raspberry pi.
-
-Envoyer un mail :
-
-
-{% highlight ruby %}
-echo "Le corps du mail" | mail -s "Titre du mail" destinataire@mail.com
-{% endhighlight %}
-
-
-Envoyer une piece jointe :
-
-{% highlight ruby %}
-mpack -s "Titre du Mail" /home/pi/dossier-perso/fichier destinataire@mail.com
+sudo apt-get install ocaml
+wget http://www.seas.upenn.edu/~bcpierce/unison//download/releases/unison-2.48.1/unison-2.48.1.tar.gz
+tar -zxvf unison-2.48.1.tar.gz
+cd unison-2.48.1/
+sudo make UISTYLE=text
+#On deplace ensuite le dossier compilé dans le répertoire des applications perso "/opt", puis on génére un lien symbolique
+sudo cp -r unison-2.48.1 /opt/
+cd /usr/bin
+sudo ln -s /opt/unison-2.48.1/unison unison
 {% endhighlight %}
 
 
+Pour plus de détails d'installation, vous pouvez récupérer <a href="http://www.seas.upenn.edu/~bcpierce/unison//download/releases/unison-2.48.1/unison-2.48.1-manual.pdf">la notice</a>
 
+<h3>Utiliser Unison pour synchroniser la Raspberry PI avec un serveur distant  </h3>
 
+Connaissant l'adresse IP du serveur distant ainsi que l'hostname, par exemple "12.34.56.78" et "bob". Pour synchroniser le contenu de deux dossier d1 (présent sur la pi) et d2 (présent sur le serveur distant), il suffit de taper :
 
-[source][source]
-[source]: http://www.raspberry-projects.com/pi/software_utilities/email/ssmtp-to-send-emails
-
-
+{% highlight ruby %}
+./unison -batch /home/pi/d1 ssh://bob@12.34.56.78//home/bob/d2
+{% endhighlight %}
