@@ -17,8 +17,7 @@ On obtient alors une adresse du type :
 192.168.0.254
 {% endhighlight %}
 
-
-Nous pouvons ensuite configurer l'IP statique. Pour cela, il faut modifier le fichier "dhcpcd.conf" :
+<h3>1) Modifier le fichier "dhcpcd.conf" </h3>
 
 {% highlight ruby %}
 sudo nano /etc/dhcpcd.conf
@@ -38,7 +37,45 @@ static domain_name_servers=208.67.222.222 208.67.220.220
 
 {% endhighlight %}
 
-enfin il faut faire un <code>sudo reboot</code> ou bien (plus rapide) <code>sudo systemctl daemon-reload</code>.
+<h3>2) Modifier le fichier "interfaces" </h3>
+
+{% highlight ruby %}
+sudo nano /etc/network/interfaces
+{% endhighlight %}
+
+tel que : 
+
+{% highlight ruby %}
+# interfaces(5) file used by ifup(8) and ifdown(8)
+
+# Please note that this file is written to be used with dhcpcd
+# For static IP, consult /etc/dhcpcd.conf and 'man dhcpcd.conf'
+
+# Include files from /etc/network/interfaces.d:
+source-directory /etc/network/interfaces.d
+
+auto lo
+iface lo inet loopback
+
+auto eth0
+allow-hotplug eth0
+
+iface eth0 inet manual
+
+auto wlan0
+allow-hotplug wlan0
+iface wlan0 inet manual
+wpa-conf /etc/wpa_supplicant/wpa_supplicant.conf
+
+auto wlan1
+allow-hotplug wlan1
+iface wlan1 inet manual
+wpa-conf /etc/wpa_supplicant/wpa_supplicant.conf
+
+{% endhighlight %}
+
+
+Enfin il faut faire un <code>sudo reboot</code> ou bien (plus rapide) <code>sudo systemctl daemon-reload</code>.
 
 <strong>Remarques: </strong>
  - Noter que l'on peut configurer un adresse ip statique différente selon que l'on soit connecté par cable ethernet ou bien wifi

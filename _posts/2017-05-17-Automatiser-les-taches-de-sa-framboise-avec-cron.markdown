@@ -30,9 +30,9 @@ Si vous souhaitez que Cron execute le script <code>/home/pi/backup.sh</code> tou
 <strong>Sources :</strong>
 <ul>
     <li>
-    <a href="https://www.raspberrypi.org/documentation/linux/usage/cron.md">Documentation Officielle Raspbian </a>
+    <a href="https://www.raspberrypi.org/documentation/linux/usage/cron.md" target="_blanck">Documentation Officielle Raspbian </a>
     </li>
     <li>
-     <a href="https://technique.arscenic.org/commandes-linux-de-base/article/cron-gestion-des-taches-planifiees">cron-gestion-des-taches-planifiees</a>
+     <a href="https://technique.arscenic.org/commandes-linux-de-base/article/cron-gestion-des-taches-planifiees" target="_blanck">cron-gestion-des-taches-planifiees</a>
     </li>
 </ul>
