@@ -56,9 +56,10 @@ dtoverlay=w1-gpio-pullup,gpiopin=4,extpullup=1
 {% endhighlight %}
 
 
-Pour utiliser un clavier tactile, il faut installer le paquet xvkbd:
+Pour utiliser un clavier tactile, il faut installer le paquet xvkbd et MatchBox:
 {% highlight ruby %}
 sudo apt-get install -y xvkbd
+sudo apt-get install matchbox
 {% endhighlight %}
 
 
@@ -89,13 +90,19 @@ sudo cp -rf /usr/share/X11/xorg.conf.d/10-evdev.conf /usr/share/X11/xorg.conf.d/
 sudo reboot
 {% endhighlight %}
  
- 
-A voir : 
-
-- [Wiki](http://www.raspberrypiwiki.com/index.php/Touchscreen_calibration)
-
-- [Source-Officielle](https://www.elecrow.com/wiki/index.php?title=HDMI_Interface_5_Inch_800x480_TFT_Display)
-
-
-- [Aussi](https://www.jeffgeerling.com/blog/2016/review-elecrow-hdmi-5-800x480-tft-display-xpt2046-touch-controller)
+Sources : 
+<ul>
+<li>
+<a href="http://www.raspberrypiwiki.com/index.php/Touchscreen_calibration" target="_blanck">http://www.raspberrypiwiki.com/index.php/Touchscreen_calibration</a>
+</li>
+<li>
+<a href="https://www.elecrow.com/wiki/index.php?title=HDMI_Interface_5_Inch_800x480_TFT_Display" target="_blanck"> [Source-Officielle] </a>
+</li>
+<li>
+<a href="https://www.jeffgeerling.com/blog/2016/review-elecrow-hdmi-5-800x480-tft-display-xpt2046-touch-controller" target="_blanck">https://www.jeffgeerling.com/blog/2016/review-elecrow-hdmi-5-800x480-tft-display-xpt2046-touch-controller</a>
+</li>
+<li>
+<a href="http://www.framboise314.fr/clavier-virtuel-matchbox-en-azerty-sur-le-raspberry-pi/" target="_blanck">http://www.framboise314.fr/clavier-virtuel-matchbox-en-azerty-sur-le-raspberry-pi/</a>
+</li>
+</ul>
 

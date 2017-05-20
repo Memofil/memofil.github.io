@@ -23,9 +23,18 @@ Si vous souhaitez que Cron execute le script <code>/home/pi/backup.sh</code> tou
 
 {% highlight ruby %}
 #execution du backup de la base historique toutes les minutes
-* * * * * sh /home/pi/backup.sh
+* * * * * sh /home/pi/backup.sh >>/home/pi/backupLog/`date +\%Y\%m\%d\%H\%M\%S`-backup.log 2>&1
 {% endhighlight %}
 
+ou bien encore ( sans date) : 
+{% highlight ruby %}
+#execution du backup de la base historique toutes les minutes
+* * * * * sh /home/pi/backup.sh >>/home/pi/backupLog/backup.log 2>&1
+{% endhighlight %}
+
+<strong>Remarque : </strong> La deuxième partie permet d'enregistrer dans un fichier l'historique des sauvegardes. 
+Si vous avez mis en place un service de mail sur votre Raspberry, cette option est necessaire, car Cron va essayer de vous envoyer les logs par mail et "par defaut". 
+Voir -> <a href="https://www.raspberrypi.org/forums/viewtopic.php?f=28&t=66165" target="_blanck">https://www.raspberrypi.org/forums/viewtopic.php?f=28&t=66165</a>
 
 <strong>Sources :</strong>
 <ul>
