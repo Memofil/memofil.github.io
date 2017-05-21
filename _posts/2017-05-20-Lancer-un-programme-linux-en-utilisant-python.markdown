@@ -53,8 +53,15 @@ subprocess.call('cp -r ./dossier1/fichier.txt ./dossier2/', shell=True)
 import os
 subprocess.call('cp -r ./dossier1/* ./dossier2/', shell=True)
 {% endhighlight %}
-    
 
+
+<p> Executer un programme contenant des arguments / Exemple avec  "arecord" :  </p>
+{% highlight ruby %}
+import os
+Enregistrement = 'arecord -d 10 test.wav'
+subprocess.Popen(Enregistrement, shell=True)
+{% endhighlight %}
+    
 <h3>Sources :</h3>
 
 <ul>
