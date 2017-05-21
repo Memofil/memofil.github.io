@@ -16,30 +16,29 @@ Il y a deux modules majeurs sous python permettant d'appeler des programmes exte
 
 <h3>Exemples de scripts avec le module os </h3>
 
-< a href="https://docs.python.org/2/library/os.html#os.system" target="_blanck">https://docs.python.org/2/library/os.html#os.system</a>
+<a href="https://docs.python.org/2/library/os.html#os.system" target="_blanck">https://docs.python.org/2/library/os.html#os.system</a>
 
-<ul>
-    <li> Imprimer le chemin "pwd"
+
+    <p> Imprimer le chemin "pwd"
     {% highlight ruby %}
     import os
     os.system("pwd")
     {% endhighlight %}
-    </li>
+    </p>
     
-    <li> Créer un dossier "mkdir"
+    <p> Créer un dossier "mkdir"
     {% highlight ruby %}
     import os
     os.system("mkdir " + 'dossier')
     {% endhighlight %}
-    </li>
+    </p>
     
-    
-</ul>
+
 
 
 <h3>Exemples de scripts avec le module subProcess</h3>
 
-< a href="https://docs.python.org/2/library/subprocess.html#subprocess.call" target="_blanck">https://docs.python.org/2/library/subprocess.html#subprocess.call</a>
+<a href="https://docs.python.org/2/library/subprocess.html#subprocess.call" target="_blanck">https://docs.python.org/2/library/subprocess.html#subprocess.call</a>
 
 
 <ul>
