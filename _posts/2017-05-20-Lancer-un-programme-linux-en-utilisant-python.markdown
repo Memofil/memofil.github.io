@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Installer une carte son USB sur Raspberry PI - Raspbian 8"
+title:  "Lancer un programme linux en utilisant python"
 date:   2017-05-20 00:09:36 +0200
 categories: Carte Son USB Raspberry Raspbian
 ---
@@ -8,6 +8,7 @@ categories: Carte Son USB Raspberry Raspbian
 <h3>Préalable</h3>
 <ul>
 <li>
+Installer Python
 {% highlight ruby %}
 #Pour les utilitaires usb
 sudo apt-get install usbutils
