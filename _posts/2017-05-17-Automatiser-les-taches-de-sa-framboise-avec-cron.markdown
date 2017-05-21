@@ -19,23 +19,45 @@ Afin de planifier des taches, il faut editer la cron table :
 crontab -e
 {% endhighlight %}
 
-Si vous souhaitez que Cron execute le script <code>/home/pi/backup.sh</code> toute les  minutes, on écrira à la fin du fichier :
+Si vous souhaitez que Cron execute le script <code>/home/pi/backup.sh</code> toutes les  minutes, on écrira à la fin du fichier :
 
 {% highlight ruby %}
-#execution du backup de la base historique toutes les minutes
-* * * * * sh /home/pi/backup.sh >>/home/pi/backupLog/`date +\%Y\%m\%d\%H\%M\%S`-backup.log 2>&1
+#execution du backup de la base historique toutes les 5 minutes
+*/5 * * * *  /home/pi/backup.sh >>/home/pi/backupLog/backup.log 2>&1
 {% endhighlight %}
 
-ou bien encore ( sans date) : 
+ou bien encore toutes les minutes ( sans append ) : 
 {% highlight ruby %}
 #execution du backup de la base historique toutes les minutes
-* * * * * sh /home/pi/backup.sh >>/home/pi/backupLog/backup.log 2>&1
+* * * * *  /home/pi/backup.sh >/home/pi/backupLog/backup.log 
 {% endhighlight %}
 
-<strong>Remarque : </strong> La deuxième partie permet d'enregistrer dans un fichier l'historique des sauvegardes. 
+
+
+<strong>Remarques : </strong> 
+
+<ul>
+<li>La deuxième partie permet d'enregistrer dans un fichier l'historique des sauvegardes. 
 Si vous avez mis en place un service de mail sur votre Raspberry, cette option est necessaire, car Cron va essayer de vous envoyer les logs par mail et "par defaut". 
 Voir -> <a href="https://www.raspberrypi.org/forums/viewtopic.php?f=28&t=66165" target="_blanck">https://www.raspberrypi.org/forums/viewtopic.php?f=28&t=66165</a>
+</li>
+<li>
+Veiller à ce que le script soit executable :  <code>sudo chmod +x backup.sh</code>
+</li>
+<li>
+Si les synchronisations sont trop peu espacées dans le temps, un nouveau job peut démarrer avant que l'ancien soit terminé,et cela peut provoquer des conflits et un comportement hasardeux de cron.
+Une <a href="https://serverfault.com/questions/461306/make-a-cronjob-wait-for-previous-rsync-job-to-finish" target="_blanck">solution</a> est de conditionner le lancement de l'application associée au script.
+Si cette derniere est déja en marche, l'application ne se lancera pas. Prenons l'exemple d'un backup avec rsync, du dossier <code>Documents</code> d'un Raspberry PI vers un dosser <code>PI/backup</code> d'un serveur distant.
+<code>backup.sh</code> s'écrira :
+{% highlight ruby %}
+pgrep -c rsync || rsync -ssh -avz /home/pi/Documents user@IP.ADRESS:"PI/backup/"
+{% endhighlight %}
 
+
+
+</li>
+
+</ul>
 <strong>Sources :</strong>
 <ul>
     <li>

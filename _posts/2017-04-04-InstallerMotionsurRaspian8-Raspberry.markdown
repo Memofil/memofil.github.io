@@ -15,7 +15,11 @@ echo "bcm2835-v4l2" | sudo tee -a /etc/modules
 
 
 </li>
-
+<li> Verifier aussi que ces paquets sont bien installés
+{% highlight ruby %}
+sudo aptitude install python-tornado python-jinja2 python-imaging motion ffmpeg v4l-utils
+{% endhighlight %}
+</li>
 </ul>
 
 
@@ -62,3 +66,28 @@ sudo systemctl start motioneye
 
 Connaissant l'adresse Ip de votre Raspberry, dans la barre d'adresse entrez simplement :  http://192.168.0.10:8765
 
+<h3> Lancer un script python depuis à MotionEye  "Run a command" </h3>
+
+Il faut créer un script executable qui sera appelé par MotionEye.
+
+1) Créer un script python : <code>nano monScript.py</code>
+
+2) Exemple de script, enregistrement de l'heure et la date des détections : 
+{% highlight ruby %}
+import time
+f = open("/home/pi/motionDetection.log","a")
+f.write(time.strftime("%Y-%m-%d %H:%M")+'\n')
+f.close()
+{% endhighlight %}
+
+3)Rendre le script executable :<code>sudo chmod +x monScript.py</code>
+
+4) Dans la case "Run a command", insérer uniquement l'adresse du script : <code>/home/pi/monScript.py </code>
+
+
+
+Source :
+
+<a href="https://github.com/ccrisan/motioneyeos/wiki/Installation" target="_blanck">https://github.com/ccrisan/motioneyeos/wiki/Installation</a>
+
+<a href="http://www.howtoembed.com/projects/raspberry-pi/95-motioneye-with-raspberry-pi" target="_blanck">http://www.howtoembed.com/projects/raspberry-pi/95-motioneye-with-raspberry-pi</a>

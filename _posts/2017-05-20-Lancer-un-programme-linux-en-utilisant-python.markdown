@@ -10,7 +10,6 @@ Il y a deux modules majeurs sous python permettant d'appeler des programmes exte
 
 
 <h3>Exemples de scripts avec le module os </h3>
-<a href="https://docs.python.org/2/library/os.html#os.system" target="_blanck">https://docs.python.org/2/library/os.html#os.system</a>
 
 
 <p> Imprimer le chemin "pwd" : </p>
@@ -27,7 +26,7 @@ os.system("mkdir " + 'dossier')
 
 <h3>Exemples de scripts avec le module subProcess</h3>
 
-<a href="https://docs.python.org/2/library/subprocess.html#subprocess.call" target="_blanck">https://docs.python.org/2/library/subprocess.html#subprocess.call</a>
+
 
 
 <p> Imprimer le chemin "pwd" : </p>
@@ -61,13 +60,27 @@ import os
 Enregistrement = 'arecord -d 10 test.wav'
 subprocess.Popen(Enregistrement, shell=True)
 {% endhighlight %}
+
+ou encore ( avec l'Enregistrement qui se fait au niveau du home) : 
+
+{% highlight ruby %}
+import os
+Enregistrement = 'arecord -d 10 ~/test.wav'
+subprocess.Popen(Enregistrement, shell=True)
+{% endhighlight %}
     
 <h3>Sources :</h3>
 
 <ul>
-    <li>
-    <a href="https://www.cyberciti.biz/faq/python-execute-unix-linux-command-examples/" target="_blanck">https://www.cyberciti.biz/faq/python-execute-unix-linux-command-examples/</a>
-    </li>
+<li>
+<a href="https://docs.python.org/2/library/os.html#os.system" target="_blanck">https://docs.python.org/2/library/os.html#os.system</a>
+</li>
+<li>
+<a href="https://docs.python.org/2/library/subprocess.html#subprocess.call" target="_blanck">https://docs.python.org/2/library/subprocess.html#subprocess.call</a>
+</li>
+<li>
+<a href="https://www.cyberciti.biz/faq/python-execute-unix-linux-command-examples/" target="_blanck">https://www.cyberciti.biz/faq/python-execute-unix-linux-command-examples/</a>
+</li>
 </ul>
 
 
