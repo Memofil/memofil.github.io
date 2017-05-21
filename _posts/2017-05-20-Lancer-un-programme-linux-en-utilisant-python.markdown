@@ -11,16 +11,74 @@ categories: Python Linux Bash Shell
 </li>
 </ul>
 
+Il y a deux modules majeurs sous python permettant d'appeler des programmes externes sous linux ou windows : "Os" et "subProcess". La syntaxe du premier est plus simple mais il est recommandé d'utiliser le second ( <a href="https://docs.python.org/2/library/subprocess.html#replacing-os-system" target ="_blanck"> voir </a> ) , plus complexe, qui autorise plus de possibilités.
 
-<h3>Exemples de scripts</h3>
 
+<h3>Exemples de scripts avec le module os </h3>
+
+< a href="https://docs.python.org/2/library/os.html#os.system" target="_blanck">https://docs.python.org/2/library/os.html#os.system</a>
+
+<ul>
+    <li> Imprimer le chemin "pwd"
+    {% highlight ruby %}
+    import os
+    os.system("pwd")
+    {% endhighlight %}
+    </li>
+    
+    <li> Créer un dossier "mkdir"
+    {% highlight ruby %}
+    import os
+    os.system("mkdir " + 'dossier')
+    {% endhighlight %}
+    </li>
+    
+    
+</ul>
+
+
+<h3>Exemples de scripts avec le module subProcess</h3>
+
+< a href="https://docs.python.org/2/library/subprocess.html#subprocess.call" target="_blanck">https://docs.python.org/2/library/subprocess.html#subprocess.call</a>
+
+
+<ul>
+    <li> Imprimer le chemin "pwd"
+    {% highlight ruby %}
+    import subprocess
+    subprocess.call("pwd")
+    {% endhighlight %}
+    </li>
+    
+    <li> Créer un répertoire "mkdir"
+    {% highlight ruby %}
+    import subprocess
+    subprocess.check_call(['mkdir', 'dossier'])
+    {% endhighlight %}
+    </li>
+    
+     <li> Copier un fichier "cp"
+    {% highlight ruby %}
+    import os
+    subprocess.call('cp -r ./dossier1/fichier.txt ./dossier2/', shell=True)
+    {% endhighlight %}
+    </li>
+    
+    <li> Copier l'intégralité d'un dossier "cp"
+    {% highlight ruby %}
+    import os
+    subprocess.call('cp -r ./dossier1/* ./dossier2/', shell=True)
+    {% endhighlight %}
+    </li>
+    
+</ul>
 
 
 Sources :
 
 <ul>
     <li>
-    <a href="" target="_blanck"></a>
+    <a href="https://www.cyberciti.biz/faq/python-execute-unix-linux-command-examples/" target="_blanck">https://www.cyberciti.biz/faq/python-execute-unix-linux-command-examples/</a>
     </li>
 </ul>
 
