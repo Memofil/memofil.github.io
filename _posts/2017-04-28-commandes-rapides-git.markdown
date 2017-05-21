@@ -109,9 +109,16 @@ git add mon_fichier
 git commit mon_fichier
 {% endhighlight %}
 
+
 Pour des fichiers déja existant
 {% highlight ruby %}
 git commit -a
+{% endhighlight %}
+
+
+Faire un commit avec commentaires :
+{% highlight ruby %}
+git commit -a -m "Mon commentaire"
 {% endhighlight %}
 
 Envoyer les fichiers sur GitHub sur la branche master du dépot origin

@@ -13,58 +13,49 @@ Il y a deux modules majeurs sous python permettant d'appeler des programmes exte
 <a href="https://docs.python.org/2/library/os.html#os.system" target="_blanck">https://docs.python.org/2/library/os.html#os.system</a>
 
 
-<p> Imprimer le chemin "pwd" </p>
+<p> Imprimer le chemin "pwd" : </p>
 {% highlight ruby %}
     import os
     os.system("pwd")
 {% endhighlight %}
     
-<p> Créer un dossier "mkdir" </p>
+<p> Créer un dossier "mkdir" : </p>
     {% highlight ruby %}
     import os
     os.system("mkdir " + 'dossier')
     {% endhighlight %}
-
-    
 
 <h3>Exemples de scripts avec le module subProcess</h3>
 
 <a href="https://docs.python.org/2/library/subprocess.html#subprocess.call" target="_blanck">https://docs.python.org/2/library/subprocess.html#subprocess.call</a>
 
 
-<ul>
-    <li> Imprimer le chemin "pwd"
+    <p> Imprimer le chemin "pwd" : </p>
     {% highlight ruby %}
     import subprocess
     subprocess.call("pwd")
     {% endhighlight %}
-    </li>
     
-    <li> Créer un répertoire "mkdir"
+    <p> Créer un répertoire "mkdir" </p>
     {% highlight ruby %}
     import subprocess
     subprocess.check_call(['mkdir', 'dossier'])
     {% endhighlight %}
-    </li>
     
-     <li> Copier un fichier "cp"
+    <p> Copier un fichier "cp" </p>
     {% highlight ruby %}
     import os
     subprocess.call('cp -r ./dossier1/fichier.txt ./dossier2/', shell=True)
     {% endhighlight %}
-    </li>
     
-    <li> Copier l'intégralité d'un dossier "cp"
+    <p> Copier l'intégralité d'un dossier "cp" </p>
     {% highlight ruby %}
     import os
     subprocess.call('cp -r ./dossier1/* ./dossier2/', shell=True)
     {% endhighlight %}
-    </li>
     
-</ul>
 
-
-Sources :
+<h3>Sources :</h3>
 
 <ul>
     <li>
