@@ -69,10 +69,20 @@ aplay --device=plughw:1,0 test.wav
 {% endhighlight %}
 
 
-http://www.oodlestechnologies.com/blogs/Record-Audio-on-Raspberry-Pi-3-using-audio-sound-card
-https://raspberrypi.stackexchange.com/questions/40831/how-do-i-configure-my-sound-for-jasper-on-raspbian-jessie
+
+Sources :
+
+<ul>
+    <li>
+    <a href="http://www.alsa-project.org/main/index.php/Matrix:Module-usb-audio" target="_blanck">Le site officiel du pilote audio</a>
+    </li>
+    <li>
+    <a href="http://www.oodlestechnologies.com/blogs/Record-Audio-on-Raspberry-Pi-3-using-audio-sound-card" target="_blanck">http://www.oodlestechnologies.com/blogs/Record-Audio-on-Raspberry-Pi-3-using-audio-sound-card</a>
+    </li>
+    <li>
+    <a href="https://raspberrypi.stackexchange.com/questions/40831/how-do-i-configure-my-sound-for-jasper-on-raspbian-jessie">https://raspberrypi.stackexchange.com/questions/40831/how-do-i-configure-my-sound-for-jasper-on-raspbian-jessie</a>
+    </li>
+    
+</ul>
 
 
-Lien vers le site officiel du pilote audio  :
-
-<a href="http://www.alsa-project.org/main/index.php/Matrix:Module-usb-audio" target="_blanck">http://www.alsa-project.org/main/index.php/Matrix:Module-usb-audio</a>
