@@ -5,17 +5,11 @@ date:   2017-05-20 00:09:36 +0200
 categories: Python Linux Bash Shell 
 ---
 
-<h3>Préalable</h3>
-<ul>
-<li>
-</li>
-</ul>
 
 Il y a deux modules majeurs sous python permettant d'appeler des programmes externes sous linux ou windows : "Os" et "subProcess". La syntaxe du premier est plus simple mais il est recommandé d'utiliser le second ( <a href="https://docs.python.org/2/library/subprocess.html#replacing-os-system" target ="_blanck"> voir </a> ) , plus complexe, qui autorise plus de possibilités.
 
 
 <h3>Exemples de scripts avec le module os </h3>
-
 <a href="https://docs.python.org/2/library/os.html#os.system" target="_blanck">https://docs.python.org/2/library/os.html#os.system</a>
 
 
