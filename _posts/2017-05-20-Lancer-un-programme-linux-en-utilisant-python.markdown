@@ -15,44 +15,44 @@ Il y a deux modules majeurs sous python permettant d'appeler des programmes exte
 
 <p> Imprimer le chemin "pwd" : </p>
 {% highlight ruby %}
-    import os
-    os.system("pwd")
+import os
+os.system("pwd")
 {% endhighlight %}
     
 <p> Créer un dossier "mkdir" : </p>
-    {% highlight ruby %}
-    import os
-    os.system("mkdir " + 'dossier')
-    {% endhighlight %}
+{% highlight ruby %}
+import os
+os.system("mkdir " + 'dossier')
+{% endhighlight %}
 
 <h3>Exemples de scripts avec le module subProcess</h3>
 
 <a href="https://docs.python.org/2/library/subprocess.html#subprocess.call" target="_blanck">https://docs.python.org/2/library/subprocess.html#subprocess.call</a>
 
 
-    <p> Imprimer le chemin "pwd" : </p>
-    {% highlight ruby %}
-    import subprocess
-    subprocess.call("pwd")
-    {% endhighlight %}
+<p> Imprimer le chemin "pwd" : </p>
+{% highlight ruby %}
+import subprocess
+subprocess.call("pwd")
+{% endhighlight %}
     
-    <p> Créer un répertoire "mkdir" </p>
-    {% highlight ruby %}
-    import subprocess
-    subprocess.check_call(['mkdir', 'dossier'])
-    {% endhighlight %}
+<p> Créer un répertoire "mkdir" </p>
+{% highlight ruby %}
+import subprocess
+subprocess.check_call(['mkdir', 'dossier'])
+{% endhighlight %}
     
-    <p> Copier un fichier "cp" </p>
-    {% highlight ruby %}
-    import os
-    subprocess.call('cp -r ./dossier1/fichier.txt ./dossier2/', shell=True)
-    {% endhighlight %}
+<p> Copier un fichier "cp" </p>
+{% highlight ruby %}
+import os
+subprocess.call('cp -r ./dossier1/fichier.txt ./dossier2/', shell=True)
+{% endhighlight %}
     
-    <p> Copier l'intégralité d'un dossier "cp" </p>
-    {% highlight ruby %}
-    import os
-    subprocess.call('cp -r ./dossier1/* ./dossier2/', shell=True)
-    {% endhighlight %}
+<p> Copier l'intégralité d'un dossier "cp" </p>
+{% highlight ruby %}
+import os
+subprocess.call('cp -r ./dossier1/* ./dossier2/', shell=True)
+{% endhighlight %}
     
 
 <h3>Sources :</h3>
