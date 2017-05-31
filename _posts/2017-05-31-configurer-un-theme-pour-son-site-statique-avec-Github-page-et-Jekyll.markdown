@@ -85,5 +85,4 @@ subprocess.Popen(Enregistrement, shell=True)
 </li>
 </ul>
 
-{% include footer.html %}
 
