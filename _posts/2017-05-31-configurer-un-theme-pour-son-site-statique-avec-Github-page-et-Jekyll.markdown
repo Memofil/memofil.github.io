@@ -1,7 +1,7 @@
 ﻿---
 layout: post
 title:  "Configurer un theme pour son site statique avec Github page et Jekyll"
-date:   2017-05-31 00:09:36 +0200
+date:   2017-05-31 16:09:36 +0200
 categories: github page jekyll theme 
 ---
 
