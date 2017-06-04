@@ -24,7 +24,7 @@ github_username:  Memofil
 
 # Build settings
 markdown: kramdown
-theme: jekyll-theme-cayman
+theme: jekyll-theme-tactile
 gems:
   - jekyll-feed
 exclude:
