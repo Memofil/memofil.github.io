@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title:  "Configurer l'écran HDMI 5 pouces avec touche controller XPT2046 pour Rapsberry Pi"
 date:   2017-04-17 10:37:00 +0200
 categories: raspberry pi raspbian

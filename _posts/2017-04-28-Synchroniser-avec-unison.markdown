@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title:  "Synchroniser avec Unison"
 date:   2017-04-28 12:30:00 +0200
 categories: Unison Linux Terminal 

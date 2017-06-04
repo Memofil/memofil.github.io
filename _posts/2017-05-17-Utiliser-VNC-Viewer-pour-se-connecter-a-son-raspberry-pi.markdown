@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title:  "Se connecter à son Raspberry Pi par internet avec VNC Viewer"
 date:   2017-05-17 18:30:00 +0200
 categories: Raspberry Pi Ubuntu VNC Linux Terminal 

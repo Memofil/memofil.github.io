@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title:  "Commandes rapides Git"
 date:   2017-04-28 10:30:00 +0200
 categories: Git Linux Terminal 

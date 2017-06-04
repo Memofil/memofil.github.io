@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title:  "Envoyer un mail en ligne de commande sous raspbian jessie"
 date:   2017-04-28 12:30:00 +0200
 categories: Git Linux Terminal 

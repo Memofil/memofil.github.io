@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title:  "Installer Bash pour Windows 10, Ruby et Jekyll"
 date:   2017-04-01 00:09:36 +0200
 categories: ruby jekyll update bash windows 10 wsl

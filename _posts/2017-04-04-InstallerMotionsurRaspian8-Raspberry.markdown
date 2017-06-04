@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title:  "Installer Motion & MotionEye sur Raspberry - Raspbian 8"
 date:   2017-04-01 00:09:36 +0200
 categories: Motion Raspberry Raspbian
