@@ -6,6 +6,8 @@ layout: default
 title : Memofil: Pour retrouver le fil de ses idées
 ---
 
+test
+
 <ul class="entries">
     {% for post in paginator.posts %}
         <li>
