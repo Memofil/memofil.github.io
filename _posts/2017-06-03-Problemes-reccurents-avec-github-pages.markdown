@@ -91,9 +91,13 @@ jekyll 3.4.3 | Error:  The jekyll-theme-dinky theme could not be found.
 Dans le fichier "_congig.yml" on a fait référence theme dinky mais ce dernier est introuvable. Deplus, on remarque que le theme qui vient d'etre installé via le gemfile est "minima 2.0". 
 Voici donc la source du conflit.
 
-
+1. Il faut alors éditer le fichier 'config.yml', mettre en commentaire <code>#gem "minima", "~> 2.0"</code> et ajouter : <code>gem "github-pages", group: :jekyll_plugins</code>
+2. Taper : <code> bundle update github-pages</code> , les themes par défaut de github vont etre installés
+3. Il faut changer le layout dans chaque page te article. Avec minima, au debut de chaque page, nous avions <code> layout : post </code>, on écrit à la place <code> layout : default </code> or "post" ne signifie plus rien, il faut alors créer le répertoire _layouts et y ajouter une page ' default.html' que l'on trouvera sur le dépots du theme choisi. C'est cette struture de page qui sera utilisée.
 
 Sources : 
 <a href="https://help.github.com/articles/setting-up-your-github-pages-site-locally-with-jekyll/#step-4-build-your-local-jekyll-site" target="_blanck">https://help.github.com/articles/setting-up-your-github-pages-site-locally-with-jekyll/#step-4-build-your-local-jekyll-site</a>
 
 https://github.com/pages-themes/dinky
+
+http://literaturegeek.com/2017/02/04/building-research-website-with-jekyll-githubpages-theming
