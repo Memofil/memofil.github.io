@@ -22,10 +22,9 @@ theme: jekyll-theme-tactile
 2. Pour que le thème soit actif aussi en local, vous pouvez modifier le ".gemfile", en ajoutant : <code> gem "github-pages", group: :jekyll_plugins</code>, puis lancer <code>bundle update github-pages</code>
 3.Il faut enfin ajouter ou modifier le fichier "_layouts/default.html" en faisant un copier/coller du template présent sur le dépot en ligne d thèmé choisit. 
 Dans notre cas : <a href="https://github.com/pages-themes/tactile/blob/master/_layouts/default.html" target="_blanck">https://github.com/pages-themes/tactile/blob/master/_layouts/default.html</a> 
-
 4. Le push une fois effectué, la page rafraichie et l'historique effacé, le nouveau thème devrait actif!
 
-<stong>Remarques :</strong> Si le thème précédent était 'minima', le thème par défaut chargé à la création du site, ces procédures ne sont pas suffisantes 
+<strong>Remarques :</strong> Si le thème précédent était 'minima', le thème par défaut chargé à la création du site, ces procédures ne sont pas suffisantes 
 <ul>
 <li>
 il faudra aussi effacer toute les références à "minima", que ce soit dans le config.yml, about.md et gemfile. 
@@ -36,17 +35,16 @@ Il faudra aussi modifier les premières lignes de tous les articles et pages dé
 <li>
 On remarquera alors que la page d'accueil n'affiche plus les liens vers les articles, comme pouvez le faire minima. Nous allons voir par la suite, comment mettre en page son site et récupéper boutons et fonctionnalités.
 </li>
+</ul>
 
-<h2>Personnaliser la page d'accueil d'un site statique sous Jekyll</h2>
-
+Personnaliser la page d'accueil d'un site statique sous Jekyll
 Le contenu de la page d'accueil se situe dans le fichier "index.md"
 
 
 Afficher les derniers articles :
-{% highlight ruby %}
-<h1>Derniers Articles</h1>
-{% for post in site.posts limit:1 %}
-{% endhighlight %}
+<code>
+
+</code>
 
 Sources : 
 
