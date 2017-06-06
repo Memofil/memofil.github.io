@@ -37,14 +37,35 @@ On remarquera alors que la page d'accueil n'affiche plus les liens vers les arti
 </li>
 </ul>
 
+
+
+
+<h4>Ajouter une barre de navigation (navbar)</h4>
+
+https://www.taniarascia.com/responsive-dropdown-navigation-bar/
+
+
+{% highlight ruby %}
+
+{% endhighlight %}
+
+
 Personnaliser la page d'accueil d'un site statique sous Jekyll
 Le contenu de la page d'accueil se situe dans le fichier "index.md"
 
 
-Afficher les derniers articles :
-<code>
+<h4>Afficher les derniers articles :</h4>
+{% highlight ruby %}
 
-</code>
+{% endhighlight %}
+
+
+<h4>Créer une nouvelle Page :</h4>
+Pour créer une nouvelle page, il suffit de copier la page "about.md" et de la renommée.
+Toutes les nouvelles pages doivent etre enregistrée à la racine du site.
+{% highlight ruby %}
+
+{% endhighlight %}
 
 Sources : 
 

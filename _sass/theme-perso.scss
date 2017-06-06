@@ -1,0 +1,75 @@
+
+/*Variables*/
+$content-width: 1000px;
+$breakpoint: 800px;
+$nav-height: 30px;
+$nav-background: #262626;
+$nav-font-color: #000000;
+$link-hover-color: #BDBDBD;
+
+
+
+/* Barre de navigation
+================================================== */
+
+
+nav {
+    width: 100%;
+    text-align: right;
+    
+    ul {
+        margin: 0;
+        padding: 0;
+        li {
+            list-style: none;  
+            float: right;
+            position: relative;
+            a {
+                display: block;
+                padding: 0 10px;
+                line-height: $nav-height;
+                background: none;
+                color: $nav-font-color;
+                text-decoration: none;
+                &:hover {
+                    background: $link-hover-color;
+                    color: $nav-font-color;
+                }
+                &:not(:only-child):after {
+                    padding-left: 4px;
+                    content: ' ▾';
+                } 
+            }
+            ul li {
+                min-width: 190px;
+                & a {
+                padding: 15px;
+                line-height: 20px;
+                z-index: 1;
+                }
+            }
+        }
+    }
+}
+
+.nav-dropdown {
+  position: absolute;
+  display: none;
+  z-index: 1;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
+}
+
+
+.navbar {
+     font-size: 1em;
+     
+}
+.navMenu{
+    
+    
+}
+.navSubMenu{
+     
+    
+}
+

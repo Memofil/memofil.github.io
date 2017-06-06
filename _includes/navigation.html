@@ -1,0 +1,34 @@
+
+<!-- Navigation Start -->
+
+<nav class="navbar" role="navigation">
+   <script type="text/javascript">{% include _scripts/navbar.js %}</script>
+    <div class="nav-mobile">
+    <a id="nav-toggle" href="#!"><span></span></a>
+    </div>
+        <ul class="navMenu">
+                
+                {% for p in site.pages %}
+                <li>
+                    <a class="navMenu" href="{{ p.url }}">{{ p.title }}</a>
+                </li >
+                {% endfor %}
+                <li>
+                
+                <a href="#!">Services</a>
+                <ul class="nav-dropdown">
+                    <li>
+                        <a href="#!">Web Design</a>
+                    </li>
+                    <li>
+                        <a href="#!">Web Development</a>
+                    </li>
+                    <li>
+                        <a href="#!">Graphic Design</a>
+                    </li>
+                </ul>
+                </li>
+        </ul>
+</nav>
+
+<!-- Navigation End -->
