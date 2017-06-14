@@ -45,9 +45,53 @@ On remarquera alors que la page d'accueil n'affiche plus les liens vers les arti
 https://www.taniarascia.com/responsive-dropdown-navigation-bar/
 
 
+
+
 {% highlight ruby %}
 
 {% endhighlight %}
+
+
+Pour créer un barre de navigation avancée :
+
+https://learn.cloudcannon.com/jekyll/advanced-navigation/
+
+
+Il va falloir créer un fichier "navigationTree.yml" qui va nous permettre d'ordonner les pages dans le menu. 
+Ainsi à la racine du site :
+
+{% highlight ruby %}
+mkdir -p _data
+nano navigationTree.yml
+{% endhighlight %}
+
+On integre ensuite la liste des pages de notre site telle que :
+{% raw %}
+
+- link: /
+  name: Home
+- link: /about/
+  name: About
+- link: /services
+  name: Services
+
+{% endraw %}
+
+Puis dans le fichier "_includes/navigation.html" ( créé précédement pour la barre de navigation "simple" ), il faut insérer les lignes suivantes ;
+
+{% raw %}
+
+ {% for item in site.data.navigation %}
+    <a href="{{ item.link %}" {% if item.link == page.url %}class="active"{% endif %}>
+      {{ item.name }}
+    </a>
+  {% endfor %}
+
+{% endraw %}
+
+
+
+
 
 
 Personnaliser la page d'accueil d'un site statique sous Jekyll

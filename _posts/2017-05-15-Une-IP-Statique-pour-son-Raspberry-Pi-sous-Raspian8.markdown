@@ -5,6 +5,8 @@ date:   2017-05-15 12:30:00 +0200
 categories: raspberry Raspbian Jessie
 ---
 
+
+
 Il peut etre très utile d'avoir une IP Statique pour son Raspberry, notamment si l'on souhaite s'y connecter à distance.
 
 Il faut tout d'abord récupérer des informations sur la connexion , notamment connaitre l'adresse de la porte du routeur. Ainsi il faut taper :

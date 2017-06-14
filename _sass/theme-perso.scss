@@ -2,54 +2,59 @@
 /*Variables*/
 $content-width: 1000px;
 $breakpoint: 800px;
-$nav-height: 30px;
+$nav-height: 25px;
 $nav-background: #262626;
 $nav-font-color: #000000;
 $link-hover-color: #BDBDBD;
+$toggle-color: #000000;
+
+
 
 
 
 /* Barre de navigation
-================================================== */
+================================================== 
+*/
+
+
 
 
 nav {
-    width: 100%;
-    text-align: right;
-    
-    ul {
-        margin: 0;
-        padding: 0;
-        li {
-            list-style: none;  
-            float: right;
-            position: relative;
-            a {
-                display: block;
-                padding: 0 10px;
-                line-height: $nav-height;
-                background: none;
-                color: $nav-font-color;
-                text-decoration: none;
-                &:hover {
-                    background: $link-hover-color;
-                    color: $nav-font-color;
-                }
-                &:not(:only-child):after {
-                    padding-left: 4px;
-                    content: ' ▾';
-                } 
-            }
-            ul li {
-                min-width: 190px;
-                & a {
-                padding: 15px;
-                line-height: 20px;
-                z-index: 1;
-                }
-            }
+  float: right;
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    li {
+        list-style: none;
+        float: left;
+        position: relative;
+      a {
+        display: block;
+        padding: 0 20px;
+        line-height: $nav-height;
+        background: none;
+        color: $nav-font-color;
+        text-decoration: none;
+        &:hover {
+          background: $link-hover-color;
+          color: $nav-font-color;
         }
+        &:not(:only-child):after {
+        padding-left: 4px;
+        content: ' ▾';
+        } 
+      }
+      ul li {
+        min-width: 190px;
+        & a {
+          padding: 15px;
+          line-height: 20px;
+          z-index: 1;
+        }
+      }
     }
+  }
 }
 
 .nav-dropdown {
@@ -58,18 +63,137 @@ nav {
   z-index: 1;
   box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
 }
-
-
-.navbar {
-     font-size: 1em;
-     
+.nav-mobile {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  background: none;
+  height: $nav-height;
+  width: $nav-height;
 }
-.navMenu{
+
+#nav-toggle {
+  position: absolute;
+  right: 0px;
+  top: 5px;
+  cursor: pointer;
+  padding: 10px 35px 16px 0px;
+  span,
+  span:before,
+  span:after {
+    cursor: pointer;
+    border-radius: 1px;
+    height: 5px;
+    width: 35px;
+    background: $toggle-color;
+    position: absolute;
+    display: block;
+    content: '';
+    transition: all 300ms ease-in-out;
+  }
+  span:before {
+    top: -10px;
+  }
+  span:after {
+    bottom: -10px;
+  }
+  &.active span {
+    background-color: transparent;
+    &:before,
+    &:after {
+      top: 0;
+    }
+    &:before {
+      transform: rotate(45deg);
+    }
+    &:after {
+      transform: rotate(-45deg);
+    }
+  }
+}
+
+@media only screen and (max-width: $breakpoint) {
+  .nav-mobile {
+    display: block;
     
+  }
+   nav {
+    
+    width: 80%;
+    
+    padding: $nav-height 10% 15px;
+    ul {
+      display: none;
+      li {
+        float: none;
+        text-align:center;
+         a {
+          padding: 15px;
+          line-height: 20px;
+        }
+        ul li a {
+          padding-left: 30px;
+        }
+      }
+    }
+  }
+  
+ .nav-dropdown {
+   position: static;
+  }
+
+.nav-logo{
     
 }
-.navSubMenu{
-     
-    
+ 
+.brand {
+  position: absolute;
+  //padding-left: 50%;
+  left:0px;
+  float: left;
+  line-height: $nav-height;
+  text-transform: uppercase;
+  font-size: 1.4em;
+ // a,
+  //a:visited {
+   // color: $nav-font-color;
+    //text-decoration: none;
+ // }
+} 
+ 
+ 
+}
+
+@media screen and (min-width: $breakpoint) {
+  .nav-list {
+    display: block !important;
+  }
+}
+
+.navigation {
+  padding-top:10px;
+  height: $nav-height;
+  background: none;
+}
+
+.nav-container {
+  max-width: $content-width;
+  margin: 0 auto;
+}
+
+.brand {
+  position: absolute;
+  padding-left: 20px;
+  //left:50%;
+  float: left;
+  line-height: $nav-height;
+  text-transform: uppercase;
+  font-size: 1.4em;
+ // a,
+  //a:visited {
+   // color: $nav-font-color;
+    //text-decoration: none;
+ // }
 }
 

@@ -1,34 +1,34 @@
 
-<!-- Navigation Start -->
-
-<nav class="navbar" role="navigation">
-   <script type="text/javascript">{% include _scripts/navbar.js %}</script>
-    <div class="nav-mobile">
-    <a id="nav-toggle" href="#!"><span></span></a>
-    </div>
-        <ul class="navMenu">
-                
-                {% for p in site.pages %}
-                <li>
-                    <a class="navMenu" href="{{ p.url }}">{{ p.title }}</a>
-                </li >
-                {% endfor %}
-                <li>
-                
-                <a href="#!">Services</a>
-                <ul class="nav-dropdown">
-                    <li>
-                        <a href="#!">Web Design</a>
-                    </li>
-                    <li>
-                        <a href="#!">Web Development</a>
-                    </li>
-                    <li>
-                        <a href="#!">Graphic Design</a>
-                    </li>
-                </ul>
-                </li>
-        </ul>
-</nav>
-
-<!-- Navigation End -->
+<section class="navigation">
+  <div class="nav-container">
+    <div class="brand">
+    <!--  <a  href="#!"><img src="./assets/logo.png" width="50px" heigth="50px"></a>-->
+    <a  href="#!">{% include logo.html url="http://memofil.github.io"
+max-width="50px" file="logo.png" alt="Memofil"
+caption="" %} </a>
+      </div>
+    <nav>
+    <script type="text/javascript">{% include _scripts/navbar.js %}</script>
+   <!-- <script type="text/javascript" src="./_includes_scripts/navbar.js"></script>-->
+      <div class="nav-mobile">
+        <a id="nav-toggle" href="#!"><span></span></a>
+      </div>
+      
+        <ul class="nav-list">
+            <li>
+            <a href="#!">Home</a>
+            </li>
+            {% comment %}Jekyll can now sort on custom page key{% endcomment %}
+            {% assign pages = site.pages | sort: 'weight' %} 
+            {% for p in pages %}
+            {% if p.menu == 'main' %}
+            <li{% if p.url == page.url %} class="active"{% endif %}>
+                <a href="{{ site.baseurl }}{{ p.url }}">{{ p.title }}</a>
+            </li>
+            {% endif %}
+            {% endfor %}
+      </ul>
+    </nav>
+   
+  </div>
+</section>
