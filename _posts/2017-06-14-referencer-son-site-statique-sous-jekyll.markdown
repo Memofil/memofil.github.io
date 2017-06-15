@@ -29,7 +29,7 @@ En regardant de plus près le contenu des templates, vous remarquerez alors qu'i
 <meta charset="utf-8" />
 <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
 {% raw %}{% if page.excerpt %}{% endraw %}
   <meta name="description" content="{% raw %}{{ page.excerpt| strip_html }}{% endraw %}" />
