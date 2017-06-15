@@ -142,6 +142,7 @@ git push
 {% endhighlight %}
 Une fois les informations renseignées la porte restera ouverte pendant une heure.
 
+</hr>
 <h4>Sources :</h4>
 
 <ul>
