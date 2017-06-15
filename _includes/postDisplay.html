@@ -1,0 +1,18 @@
+{% include tagsforpost.html tags=page.tags %}
+
+<div class="related">
+  <h2>Derniers articles</h2>
+  <ul class="related-posts">
+    {% for post in site.posts limit:6 %}
+      <li>
+        <h3>
+          <a href="{{ site.baseurl }}{{ post.url }}">
+            {{ post.title }}
+            <small>{{ post.date | date_to_string }}</small>
+          </a>
+        </h3>
+      </li>
+    {% endfor %}
+  </ul>
+</div>
+
