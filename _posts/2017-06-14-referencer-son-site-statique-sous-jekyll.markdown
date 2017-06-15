@@ -59,7 +59,7 @@ Dans notre cas, nous allons modifier le fichier <code> _layouts/homepage.html <c
 
 Pour la description des posts sous markdown, il faudra ajouter une ligne dans l'introduction YAML ( YAML FRONT MATTER) : "excerpt: ma description " . 
 Par ex, pour cette page, on aura :
-```html
+```ỳaml
 ---
 layout: default
 title: "Référencer son site statique sous Jekyll"
