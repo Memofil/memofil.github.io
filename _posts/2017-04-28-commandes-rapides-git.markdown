@@ -134,7 +134,7 @@ git push
 {% endhighlight %}
 
 <h3>Faire un push sans mot de passe</h3>
-Il est possible de stocker l'identifiant et le mot de passe pour eviter d'avoir à les retaper à chaque push via les "credential.helper".
+Il est possible de stocker l'identifiant et le mot de passe pour éviter d'avoir à les retaper à chaque push via les "credential.helper".
 Pour enregistrer l'identifiant et le mot de passe pendant une heure, à la racine du dépot on tapera :
 <br/>  
 {% highlight ruby %}
