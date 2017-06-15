@@ -58,12 +58,11 @@ Dans notre cas, nous allons modifier le fichier <code> _layouts/homepage.html <c
 {% endraw %}
 ```
 
-```html
-<ul>
-  {% raw %}{% for post in site.posts %}{% endraw %}
-    <li>
-      <a href="{% raw %}{{ post.url }}{% endraw %}">{% raw %}{{ post.title }}{% endraw %}</a>
-    </li>
-  {% raw %}{% endfor %}{% endraw %}
-</ul>
-```
+
+
+Enfin, on vérifira dans le code source de la page que les informations s'affichent bien. Les informations concernant la description, le titre du site sont placées dans le fichier "_confi.yml". Il faut verifier que le fichier contient bien les lignes suivantes :
+
+{% highlight ruby %}
+title: Le nom de mon site
+description: La description de mon site
+{% endhighlight %}
