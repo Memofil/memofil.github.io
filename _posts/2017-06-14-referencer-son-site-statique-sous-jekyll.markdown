@@ -2,7 +2,7 @@
 layout: default
 title:  "Référencer son site statique sous Jekyll"
 date:   2017-06-15 10:09:36 +0200
-excerpt: Les méthodes pour bien référencer son site afin qu'il soit bien repérer par les robots googles et autres moteurs de recherche
+excerpt: Les méthodes pour bien référencer son site afin qu'il soit bien repérer par les robots google et autres moteurs de recherche
 categories: Github Pages Jekyll javascript referencement
 ---
 
@@ -15,8 +15,6 @@ Par défaut, le dossier <code>_layouts</code>  devrait contenir le template <cod
 
 {% highlight ruby %}
 ---
-
-
 layout: homepage
 # On précise la langue de la page.
 lang: fr
@@ -60,8 +58,22 @@ Dans notre cas, nous allons modifier le fichier <code> _layouts/homepage.html <c
 ```
 
 
+Pour la description des posts sous markdown, il faudra ajouter une ligne dans l'introduction YAML ( YAML FRONT MATTER) : "excerpt: ma description " . 
+Par ex, pour cette page, on aura :
+{% highlight ruby %}
+---
+layout: default
+title:  "Référencer son site statique sous Jekyll"
+date:   2017-06-15 10:09:36 +0200
+excerpt: Les méthodes pour bien référencer son site afin qu'il soit bien repérer par les robots google et autres moteurs de recherche
+categories: Github Pages Jekyll javascript referencement
+---
+{% endhighlight %}
 
-Enfin, on vérifira dans le code source de la page que les informations s'affichent bien. Les informations concernant la description, le titre du site sont placées dans le fichier "_confi.yml". Il faut verifier que le fichier contient bien les lignes suivantes :
+
+
+Enfin, on vérifiera dans le code source de la page que les informations s'affichent bien. Les informations concernant la description, le titre du site sont placées dans le fichier <code>_confi.yml</code>. 
+Le fichier doit contenir les lignes suivantes:
 
 {% highlight ruby %}
 title: Le nom de mon site
