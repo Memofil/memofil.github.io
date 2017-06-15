@@ -14,10 +14,11 @@ Par défaut, le dossier <code>_layouts</code>  devrait contenir le template <cod
 
 {% highlight ruby %}
 ---
-# You don't need to edit this file, it's empty on purpose.
-# Edit theme's home layout instead if you wanna make some changes
-# See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
+
+
 layout: homepage
+# On précise la langue de la page.
+lang: fr
 ---
 
 {% endhighlight %}
@@ -27,3 +28,32 @@ En regardant de plus près le contenu des templates, vous remarquerez alors qu'i
 
 <h3> Création d'un fichier <code>_includes/meta.htlm </code>  </h3>
 
+{% highlight ruby %}
+<meta charset="utf-8" />
+<meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+{% if page.excerpt %}
+  <meta name="description" content="{{ page.excerpt| strip_html }}" />
+  <meta property="og:description" content="{{ page.excerpt| strip_html }}" />
+{% else %}
+  <meta name="description" content="{{ site.description }}">
+  <meta property="og:description" content="{{ site.description }}" />
+{% endif %}
+  <meta name="author" content="{{ site.title }}" />
+
+{% if page.title %}
+  <meta property="og:title" content="{{ page.title }}" />
+  <meta property="twitter:title" content="{{ page.title }}" />
+ {% endif %}
+
+
+{% endhighlight %}
+
+Une fois le fichier créé, on l'intègre dans le layout choisi sachant qu'en définitive il est préférable de modifier tous les layouts de la même manière ( à moins bien sur que l'on souhaite proposer volontairement des templates différents).
+Dans notre cas, nous allons modifier le fichier <code>_layouts/homepage.html<code>. Après avoir mis en commentaires ou supprimé les balises `<meta>` déjà présentes, nous ajouterons juste en dessous de `<head>` la ligne : 
+
+{% highlight ruby %}
+{% include meta.html %}
+{% endhighlight %}
