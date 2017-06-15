@@ -5,8 +5,7 @@ date:   2017-04-28 10:30:00 +0200
 categories: Git Linux Terminal 
 ---
 
-<h1>Commandes rapides Git </h1>
-
+<h2>Commandes rapides Git </h2>
 
 <h3> Préalables </h3>
 Installer Git
