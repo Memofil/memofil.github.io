@@ -10,6 +10,21 @@ permalink: /liens/
 
 <h3> Sites utiles </h3>
 
+
+
+<h2> Developpement sous Jekyll </h2>
+
+<ul>
+<li>
+<a href="http://jekyllrb.com/" target="_blanck">http://jekyllrb.com/</a> : Site officiel de Jekyll
+</li>
+<li>
+<a href="http://www.jekyllnow.com/" target="_blanck">http://www.jekyllnow.com/</a>  : Créer un site Jekyll en quelques minutes
+</li>
+</ul>
+
+http://www.jekyllnow.com/
+
 <h2> Exemples de site sous Jekyll et github page </h2>
 
 <ul>
@@ -20,5 +35,4 @@ permalink: /liens/
 <a href="https://github.com/jekyll/jekyll/wiki/Sites" target="_blanck">https://github.com/jekyll/jekyll/wiki/Sites</a>
 </li>
 
-https://jimeh.io/
 </ul>
