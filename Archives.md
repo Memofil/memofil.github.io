@@ -2,7 +2,7 @@
 layout: default
 title: Archives
 menu: main
-weight: 10
+weight: 15
 permalink: /archives/
 
 ---
