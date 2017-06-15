@@ -84,13 +84,18 @@ Pour toutes ces raisons, il est essentiel de tester son site pour mettre en evid
 Voici une liste d'outils en ligne permettant de tester rapidement son site :
 
 <ul>
-<li>
-<a href="https://testmysite.withgoogle.com" target="_blanck">https://testmysite.withgoogle.com</a> : Un outil gratuit proposé par Google pour tester les performances de son site
-</li>
+
 <li>
 <a href="https://validator.w3.org/" target="_blanck">https://validator.w3.org/</a> : LE SITE pour tester la validité de code HTML selon les standards reconnus
 </li>
 <li>
+<a href="https://gtmetrix.com/" target="_blanck">https://gtmetrix.com/</a> : GTmetrix propose un rapport de performances très détaillés
+</li>
+<li>
+<a href="https://testmysite.withgoogle.com" target="_blanck">https://testmysite.withgoogle.com</a> : Un outil gratuit proposé par Google pour tester les performances de son site
+</li>
+<li>
+<a href="https://developers.google.com/speed/pagespeed/insights/" target="_blanck">https://developers.google.com/speed/pagespeed/insights/</a> : PageSpeed Insights teste la rapidité de chargement du site et propose des solutions pour améliorer les performances.
 </li>
 </ul>
 
