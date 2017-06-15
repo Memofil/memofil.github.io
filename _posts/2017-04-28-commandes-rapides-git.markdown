@@ -5,6 +5,10 @@ date:   2017-04-28 10:30:00 +0200
 categories: Git Linux Terminal 
 ---
 
+<h1>Commandes rapides Git </h1>
+
+
+<h3> Préalables </h3>
 Installer Git
 {% highlight ruby %}
 sudo apt-get install git-all
@@ -24,7 +28,7 @@ user]
 {% endhighlight %}
 
 
-Cloner un dépot github?
+<h3>Comment cloner un dépot github?</h3>
 
 1. Se place dans le répertoire Git
 2. Récupérer l'adresse du dépot que l'on veut cloner
@@ -34,7 +38,7 @@ git clone https://github.com/(Adresse-du-répertoire)
 {% endhighlight %}
 
 
-Créer un nouveau dépot
+<h3>Créer un nouveau dépot</h3>
 
 1. Se place dans le répertoire Git
 2. Créer le dossier
@@ -48,33 +52,33 @@ git init
 
 
 
-Connaitre le status des modifications
+<h3>Connaitre le status des modifications</h3>
 
 {% highlight ruby %}
 git status
 {% endhighlight %}
 
-Connaitre l'historique des modifications
+<h3>Connaitre l'historique des modifications
 
 {% highlight ruby %}
 git log
 {% endhighlight %}
 
 
-Afficher les différences entre 2 fichiers modifiés
+<h3>Afficher les différences entre 2 fichiers modifiés</h3>
 
 {% highlight ruby %}
 git diff
 git diff <commit1> <commit2>
 {% endhighlight %}
 
-Connaitre le status des modifications
+<h3>Connaitre le status des modifications</h3>
 
 {% highlight ruby %}
 git status
 {% endhighlight %}
 
-Gestion des versions
+<h3>Gestion des versions</h3>
 Ajouter une nouvelle version d'un fichier
 {% highlight ruby %}
 git add <mon_fichier_ou_dossier>
@@ -84,25 +88,25 @@ ou bien pour l'intégralité d'un dossier
 git add *
 {% endhighlight %}
 
-Effacer le fichier
+<h3>Effacer le fichier</h3>
 {% highlight ruby %}
 git rm <mon_fichier>
 {% endhighlight %}
 
 
-Déplacer le fichier
+<h3>Déplacer le fichier</h3>
 {% highlight ruby %}
 git mv <mom_fichier> <nouvelle_destination>
 {% endhighlight %}
 
-Gestion des commits
+<h2>Gestion des commits</h2>
 
-Mettre à jour le dépot avant tout commit pour récupérer les modifications des autres utilisateur
+<h3>Mettre à jour le dépot avant tout commit pour récupérer les modifications des autres utilisateur
 {% highlight ruby %}
 git pull
 {% endhighlight %}
 
-Faire un commit
+<h3>Faire un commit</h3>
 Pour un nouveau fichier :
 {% highlight ruby %}
 git add mon_fichier
@@ -110,18 +114,18 @@ git commit mon_fichier
 {% endhighlight %}
 
 
-Pour des fichiers déja existant
+<h3>Pour des fichiers déja existant</h3>
 {% highlight ruby %}
 git commit -a
 {% endhighlight %}
 
 
-Faire un commit avec commentaires :
+<h3>Faire un commit avec commentaires :</h3>
 {% highlight ruby %}
 git commit -a -m "Mon commentaire"
 {% endhighlight %}
 
-Envoyer les fichiers sur GitHub sur la branche master du dépot origin
+<h3>Envoyer les fichiers sur GitHub sur la branche master du dépot origin</h3>
 {% highlight ruby %}
 git push origin master
 {% endhighlight %}
@@ -133,8 +137,14 @@ git push
 
 
 
-[source][source]
-[source]: https://doc.ubuntu-fr.org/git
-[source2][source2]
-[source2]: https://git-scm.com/book/fr/v2
+Sources :
+
+<ul>
+<li>
+<a href=" https://doc.ubuntu-fr.org/git" target="_blanck">https://doc.ubuntu-fr.org/git</a>
+</li>
+<li>
+<a href="https://git-scm.com/book/fr/v2" target="_blanck">https://git-scm.com/book/fr/v2</a>
+</li>
+</ul>
 
