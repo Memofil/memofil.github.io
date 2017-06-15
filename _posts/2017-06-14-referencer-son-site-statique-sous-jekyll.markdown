@@ -73,7 +73,7 @@ categories: Github Pages Jekyll javascript referencement
 Enfin, on vérifiera dans le code source de la page que les informations s'affichent bien. Les informations concernant la description, le titre du site sont placées dans le fichier <code>_confi.yml</code>. 
 Le fichier doit contenir les lignes suivantes:
 
-{% highlight ruby %}
+```ỳaml
 title: Le nom de mon site
 description: La description de mon site
-{% endhighlight %}
+```
