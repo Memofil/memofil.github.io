@@ -54,6 +54,6 @@ En regardant de plus près le contenu des templates, vous remarquerez alors qu'i
 Une fois le fichier créé, on l'intègre dans le layout choisi sachant qu'en définitive il est préférable de modifier tous les layouts de la même manière ( à moins bien sur que l'on souhaite proposer volontairement des templates différents).
 Dans notre cas, nous allons modifier le fichier <code>_layouts/homepage.html<code>. Après avoir mis en commentaires ou supprimé les balises `<meta>` déjà présentes, nous ajouterons juste en dessous de `<head>` la ligne : 
 
-{% highlight ruby %}
+{% raw %}
 {% include meta.html %}
-{% endhighlight %}
+{% endraw %}
