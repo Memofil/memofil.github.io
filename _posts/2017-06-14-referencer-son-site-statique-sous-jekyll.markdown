@@ -88,6 +88,7 @@ Voici une liste d'outils en ligne permettant de tester rapidement son site :
 <a href="https://testmysite.withgoogle.com" target="_blanck">https://testmysite.withgoogle.com</a> : Un outil gratuit proposé par Google pour tester les performances de son site
 </li>
 <li>
+<a href="https://validator.w3.org/" target="_blanck">https://validator.w3.org/</a> : LE SITE pour tester la validité de code HTML selon les standards reconnus
 </li>
 <li>
 </li>
