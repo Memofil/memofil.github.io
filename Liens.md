@@ -23,7 +23,6 @@ permalink: /liens/
 </li>
 </ul>
 
-http://www.jekyllnow.com/
 
 <h2> Exemples de site sous Jekyll et github page </h2>
 
