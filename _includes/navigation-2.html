@@ -4,10 +4,7 @@
     <div class="brand">
     <ul>
     <li class="left">
-    <!--  <a  href="#!"><img src="./assets/logo.png" width="50px" heigth="50px"></a>-->
-    <a  href="#!">{% include logo.html url="http://memofil.github.io"
-max-width="50px" file="logo.png" alt="Memofil"
-caption="" %}> </a>
+    {% include logo.html url="http://memofil.github.io" max-width="50px" file="logo.png" alt="Memofil" caption="" %}
       </li>
       <li class="right">
           <h1>{{ site.title | default: site.github.repository_name }}</h1>
