@@ -1,7 +1,7 @@
 ---
 layout: default
 title:  "Ajouter du code javascript à une page sous Jekyll"
-date:   2017-05-22 00:09:36 +0200
+date:   2017-06-14 00:09:36 +0200
 categories: Github Pages Jekyll javascript
 ---
 

@@ -20,7 +20,7 @@ Par défaut, le dossier <code>_layouts</code>  devrait contenir le template <cod
 layout: homepage
 ---
 
-{% end raw %}
+{% endraw %}
 
 
 En regardant de plus près le contenu des templates, vous remarquerez alors qu'ils contiennent les balises <meta>, <title>,... necessaires au référencement. Ces templates contiennent aussi toutes les autres informations necessaires à l'affichage ( Barre de navigation, Header, content, Footer, ...).Or selon la complexité de votre site, le template peut rapidement contenir une grande quantité de lignes rendant la lecture difficile. Heuresement, Jekyll utilise le langage de template Liquid, grace à ce dernier, il est possible de décomposer n'importe quel fichier htlm en sous-fichier html qui seront appelés par lemploie des accolades <code> {{...}}</code>. Cette fonctionnalité est vraiment pratique et permet de limiter beaucoup les erreurs en allégeant l'esprit. Nous allons l'utiliser à la suite.
