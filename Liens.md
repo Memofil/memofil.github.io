@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Utiles
+title: Liens
 menu: main
 weight: 10
 permalink: /liens/
