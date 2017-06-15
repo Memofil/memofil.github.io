@@ -19,7 +19,6 @@ layout: homepage
 # On précise la langue de la page.
 lang: fr
 ---
-
 {% endhighlight %}
 
 
@@ -63,8 +62,8 @@ Par ex, pour cette page, on aura :
 {% highlight ruby %}
 ---
 layout: default
-title:  "Référencer son site statique sous Jekyll"
-date:   2017-06-15 10:09:36 +0200
+title: "Référencer son site statique sous Jekyll"
+date: 2017-06-15 10:09:36 +0200
 excerpt: Les méthodes pour bien référencer son site afin qu'il soit bien repérer par les robots google et autres moteurs de recherche
 categories: Github Pages Jekyll javascript referencement
 ---
