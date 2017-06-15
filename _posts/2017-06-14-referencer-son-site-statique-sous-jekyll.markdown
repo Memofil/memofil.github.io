@@ -68,8 +68,6 @@ categories: Github Pages Jekyll javascript referencement
 ---
 ```
 
-
-
 Enfin, on vérifiera dans le code source de la page que les informations s'affichent bien. Les informations concernant la description, le titre du site sont placées dans le fichier <code>_confi.yml</code>. 
 Le fichier doit contenir les lignes suivantes:
 
@@ -77,3 +75,21 @@ Le fichier doit contenir les lignes suivantes:
 title: Le nom de mon site
 description: La description de mon site
 ```
+
+<h3> Tester les performances de son site  </h3>
+
+En plus de la pertinence du contenu, un bon référencement depend aussi du respect des normes HTML, de la bonne gestion des balises '<meta>', mais aussi du comportement du site face à différents naviguateurs et différents supports ( tablette, smartphone, pc). Aujourd'hui, les robots google prennent en compte les qualités "responsive" du site dans le classement des pages.
+Pour toutes ces raisons, il est essentiel de tester son site pour mettre en evidence les problèmes potentiels impactant la qualité du référencement.
+
+Voici une liste d'outils en ligne permettant de tester rapidement son site :
+
+<ul>
+<li>
+<a href="https://testmysite.withgoogle.com" target="_blanck">https://testmysite.withgoogle.com</a> : Un outil gratuit proposé par Google pour tester les performances de son site
+</li>
+<li>
+</li>
+<li>
+</li>
+</ul>
+
