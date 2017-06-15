@@ -28,7 +28,7 @@ En regardant de plus près le contenu des templates, vous remarquerez alors qu'i
 
 <h3> Création d'un fichier <code>_includes/meta.htlm </code>  </h3>
 
-{% highlight ruby %}
+{% raw %}
 <meta charset="utf-8" />
 <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
@@ -49,7 +49,7 @@ En regardant de plus près le contenu des templates, vous remarquerez alors qu'i
  {% endif %}
 
 
-{% endhighlight %}
+{% endraw %}
 
 Une fois le fichier créé, on l'intègre dans le layout choisi sachant qu'en définitive il est préférable de modifier tous les layouts de la même manière ( à moins bien sur que l'on souhaite proposer volontairement des templates différents).
 Dans notre cas, nous allons modifier le fichier <code>_layouts/homepage.html<code>. Après avoir mis en commentaires ou supprimé les balises `<meta>` déjà présentes, nous ajouterons juste en dessous de `<head>` la ligne : 
