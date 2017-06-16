@@ -101,7 +101,7 @@ Voici une liste d'outils en ligne permettant de tester rapidement son site :
 
 <h3> Connaitre le trafic de son site sous Jekyll  </h3>
 
-Il est de connaitre le trafic de son site tres simplement via google analytics. Pour cela , il est necessaire d'avoir un compte google et de s'inscrire au programme [google analytics](https://www.google.com/analytics/). Une fois connecté, on vous invitera à renseigner le site à suivre . Vous récupérer ensuite un script qu'il faudra integrer aux templates utilisés par votre site juste avant la balise `</body>`. Il arrive que ce code soit déja présent sous la forme : 
+Il est de connaitre le trafic de son site tres simplement via google analytics. Pour cela, il est necessaire d'avoir un compte google et de s'inscrire au programme [google analytics](https://www.google.com/analytics/){:target="_blank"}. Une fois connecté, on vous invitera à renseigner le site à suivre . Vous récupérer ensuite un script qu'il faudra integrer aux templates utilisés par votre site juste avant la balise `</body>`. Il arrive que ce code soit déja présent sous la forme : 
 
 ``` javascript
 {% raw %}{% if site.google_analytics %}{% endraw %}
