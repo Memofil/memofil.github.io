@@ -103,7 +103,7 @@ Voici une liste d'outils en ligne permettant de tester rapidement son site :
 
 Il est de connaitre le trafic de son site tres simplement via google analytics. Pour cela, il est necessaire d'avoir un compte google et de s'inscrire au programme [google analytics](https://www.google.com/analytics/){:target="_blank"}. Une fois connecté, on vous invitera à renseigner le site à suivre . Vous récupérer ensuite un script qu'il faudra integrer aux templates utilisés par votre site juste avant la balise `</body>`. Il arrive que ce code soit déja présent sous la forme : 
 
-``` javascript
+``` html
 {% raw %}{% if site.google_analytics %}{% endraw %}
       <script type="text/javascript">
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
