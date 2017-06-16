@@ -11,7 +11,7 @@ categories: Github Pages Jekyll javascript referencement
 <h1>Comment bien référencer son site sous Jekyll</h1>
 
 Jekyll utilise des templates  pour gérer la mise en page des articles et pages. Ces templates se trouvent généralement dans le dossier <code>_layouts</code> situé à la racine de votre site.
-Par défaut, le dossier <code>_layouts</code>  devrait contenir le template <code>defaul.html</code>, mais vous pouvez aussi créer autant de templates souhaités. Pour pouvoir les utiliser, il faut alors modififer la ligne "layout" au tout début des articles et pages (markdown). Par exemple, pour un nouveau template <code>_layouts/homepage.htlm</code>, utilisé pour la page d'accueil, "index.md" deviendra simplement :
+Par défaut, le dossier <code>_layouts</code>  devrait contenir le template `defaul.html`, mais vous pouvez aussi créer autant de templates souhaités. Pour pouvoir les utiliser, il faut alors modififer la ligne "layout" au tout début des articles et pages (markdown). Par exemple, pour un nouveau template <code>_layouts/homepage.htlm</code>, utilisé pour la page d'accueil, "index.md" deviendra simplement :
 
 ```ỳaml
 ---
@@ -116,7 +116,7 @@ Il est de connaitre le trafic de son site tres simplement via google analytics. 
 {% raw %}{% endif %}{% endraw %}
 ```
 
-Dans ce cas, on remarque que le numéro d'identification de google analytics UA-XXXXXX a été remplacé par `{% raw %}{{ site.google_analytics }}{% endraw %}` . Il suffit alors d'aller dans le fichier `_config.yml` et d'ajouter la ligne suivante : <code> google_analytics: UA-101155540-1 </code>.
+Dans ce cas, on remarque que le numéro d'identification de google analytics `UA-XXXXXX` a été remplacé par `{% raw %}{{ site.google_analytics }}{% endraw %}` . Il suffit alors d'aller dans le fichier `_config.yml` et d'ajouter la ligne suivante : <code> google_analytics: UA-101155540-1 </code>.
 
 
 Une fois que le numéro d'identification a été renseigné, vous devriez voir les informations de connexion s'afficher en ligne sur votre compte google.
