@@ -38,6 +38,9 @@ future: true
 timezone: Europe/Paris
 
 
+#google analytics
+google_analytics: UA-101155540-1
+
 
 
 paginate: 5

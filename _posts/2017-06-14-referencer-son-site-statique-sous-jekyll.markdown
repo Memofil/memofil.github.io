@@ -1,7 +1,7 @@
 ---
 layout: default
 title:  "Référencer son site statique sous Jekyll"
-date:   2017-06-15 10:09:36 +0200
+date:   2017-06-14 10:09:36 +0200
 excerpt: Les méthodes pour bien référencer son site afin qu'il soit bien repérer par les robots google et autres moteurs de recherche
 categories: Github Pages Jekyll javascript referencement
 ---
@@ -98,4 +98,7 @@ Voici une liste d'outils en ligne permettant de tester rapidement son site :
 <a href="https://developers.google.com/speed/pagespeed/insights/" target="_blanck">https://developers.google.com/speed/pagespeed/insights/</a> : PageSpeed Insights teste la rapidité de chargement du site et propose des solutions pour améliorer les performances.
 </li>
 </ul>
+
+<h3> Connaitre le trafic de son site sous Jekyll  </h3>
+
 
