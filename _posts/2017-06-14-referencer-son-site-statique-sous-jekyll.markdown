@@ -101,4 +101,22 @@ Voici une liste d'outils en ligne permettant de tester rapidement son site :
 
 <h3> Connaitre le trafic de son site sous Jekyll  </h3>
 
+Il est de connaitre le trafic de son site tres simplement via google analytics. Pour cela , il est necessaire d'avoir un compte google et de s'inscrire au programme [google analytics](https://www.google.com/analytics/). Une fois connecté, on vous invitera à renseigner le site à suivre . Vous récupérer ensuite un script qu'il faudra integrer aux templates utilisés par votre site juste avant la balise `</body>`. Il arrive que ce code soit déja présent sous la forme : 
 
+``` javascript
+{% raw %}{% if site.google_analytics %}{% endraw %}
+      <script type="text/javascript">
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        ga('create', '{% raw %}{{ site.google_analytics }}{% endraw %}', 'auto');
+        ga('send', 'pageview');
+      </script>
+{% raw %}{% endif %}{% endraw %}
+```
+
+Dans ce cas, on remarque que le numéro d'identification de google analytics UA-XXXXXX a été remplacé par `{% raw %}{{ site.google_analytics }}{% endraw %}` . Il suffit alors d'aller dans le fichier _config.yml et d'ajouter la ligne suivante : <code> google_analytics: UA-101155540-1 </code>.
+
+
+Une fois que le numéro d'identification a été renseigné, vous devriez voir les informations de connexion s'afficher en ligne sur votre compte google.
