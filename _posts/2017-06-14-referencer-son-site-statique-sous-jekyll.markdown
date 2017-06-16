@@ -116,7 +116,7 @@ Il est de connaitre le trafic de son site tres simplement via google analytics. 
 {% raw %}{% endif %}{% endraw %}
 ```
 
-Dans ce cas, on remarque que le numéro d'identification de google analytics UA-XXXXXX a été remplacé par `{% raw %}{{ site.google_analytics }}{% endraw %}` . Il suffit alors d'aller dans le fichier _config.yml et d'ajouter la ligne suivante : <code> google_analytics: UA-101155540-1 </code>.
+Dans ce cas, on remarque que le numéro d'identification de google analytics UA-XXXXXX a été remplacé par `{% raw %}{{ site.google_analytics }}{% endraw %}` . Il suffit alors d'aller dans le fichier `_config.yml` et d'ajouter la ligne suivante : <code> google_analytics: UA-101155540-1 </code>.
 
 
 Une fois que le numéro d'identification a été renseigné, vous devriez voir les informations de connexion s'afficher en ligne sur votre compte google.
