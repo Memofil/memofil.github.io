@@ -16,24 +16,8 @@ permalink: /categories/
 <li>
 <img src="{{site.url}}/assets/images/categories/jekyll-logo.png" />
 </li>
-
-{% for post in site.posts %} 
-{% if post.categories contains "rpi" %}
- <li>{{ post.title }}</li> 
-{% endif %}
-{% endfor %}
 </ul>
 </div>
 <div>
-<ul>
-<li>
-![Logo Jekyll](/assets/images/categories/jekyll-logo.png)
-</li>
-{% for post in site.posts %} 
-{% if post.categories contains "jekyll" %}
- <li>{{ post.title }}</li> 
-{% endif %}
-{% endfor %}
-</ul>
 </div>
 
