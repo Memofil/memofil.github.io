@@ -38,3 +38,8 @@ permalink: /liens/
 <a href="https://nicolas-hoizey.com/" target="_blanck">https://nicolas-hoizey.com/</a>
 </li>
 </ul>
+
+
+<h3> Forums : Fils de discussion </h3>
+
+https://stackoverflow.com/questions/25463865/in-jekyll-how-do-i-grab-a-posts-first-image/25465910#25465910

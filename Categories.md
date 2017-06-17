@@ -9,24 +9,21 @@ permalink: /categories/
 
 
 <div>
-<ul>
-<li>
-![Logo Jekyll]({{site.url}}/assets/images/categories/jekyll-logo.png )
-</li>
-<li>
-![Logo Jekyll](http://memofil.github.io/assets/images/categories/jekyll-logo.png)
-</li>
-<li>
-![Logo Jekyll]({{"/assets/images/categories/jekyll-logo.png"| absolute_url}})
-</li>
-<li>
-![Logo Jekyll]({{"/categories/jekyll-logo.png"| absolute_url}})
-</li>
-<li>
-<img src="{{site.url}}/assets/images/categories/jekyll-logo.png" />
-</li>
-</ul>
+ <ul>
+   <li>
+     ![Logo Jekyll]({{site.url}}/assets/images/categories/jekyll-logo.png )
+   </li>
+   <li>
+     ![Logo Jekyll](http://memofil.github.io/assets/images/categories/jekyll-logo.png)
+   </li>
+   <li>
+     ![Logo Jekyll]({{"/assets/images/categories/jekyll-logo.png"| absolute_url}})
+   </li>
+   <li>
+     ![Logo Jekyll](/categories/jekyll-logo.png)
+   </li>
+   <li>
+     <img src="{{site.url}}/assets/images/categories/jekyll-logo.png" />
+   </li>
+ </ul>
 </div>
-<div>
-</div>
-
