@@ -2,10 +2,16 @@
 <section class="navigation">
   <div class="nav-container">
     <div class="brand">
-    <!--  <a  href="#!"><img src="./assets/logo.png" width="50px" heigth="50px"></a>-->
-    <a  href="#!">{% include logo.html url="http://memofil.github.io"
-max-width="50px" file="logo.png" alt="Memofil"
-caption="" %} </a>
+    <ul>
+    <li class="left">
+    {% include logo.html url="http://memofil.github.io" max-width="50px" file="logo.png" alt="Memofil" caption="" %}
+      </li>
+      <li class="right">
+          <h1>{{ site.title | default: site.github.repository_name }}</h1>
+          <h2>{{ site.description | default: site.github.project_tagline }}</h2>
+          
+      </li>
+      </ul>
       </div>
     <nav>
     <script type="text/javascript">{% include _scripts/navbar.js %}</script>
@@ -16,7 +22,7 @@ caption="" %} </a>
       
         <ul class="nav-list">
             <li>
-            <a href="{{ site.baseurl }}">Home</a>
+            <a href="{{ site.url }}">Home</a>
             </li>
             {% comment %}Jekyll can now sort on custom page key{% endcomment %}
             {% assign pages = site.pages | sort: 'weight' %} 
