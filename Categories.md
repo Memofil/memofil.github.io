@@ -13,8 +13,8 @@ permalink: /categories/
 <li>
 ![Logo Jekyll]({{site.url}}/assets/images/categories/jekyll-logo.png)
 </li>
-<li>
 <img src="{{site.url}}/assets/images/categories/jekyll-logo.png" />
+<li>
 {% for post in site.posts %} 
 {% if post.categories contains "rpi" %}
  <li>{{ post.title }}</li> 
