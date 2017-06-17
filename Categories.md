@@ -20,6 +20,9 @@ permalink: /categories/
 ![Logo Jekyll]({{"/assets/images/categories/jekyll-logo.png"| absolute_url}})
 </li>
 <li>
+![Logo Jekyll]({{"/categories/jekyll-logo.png"| absolute_url}})
+</li>
+<li>
 <img src="{{site.url}}/assets/images/categories/jekyll-logo.png" />
 </li>
 </ul>
