@@ -32,6 +32,9 @@ permalink: /liens/
 </li>
 <li>
 <a href="https://github.com/jekyll/jekyll/wiki/Sites" target="_blanck">https://github.com/jekyll/jekyll/wiki/Sites</a>
-</li>
 
+
+<li>
+<a href="https://nicolas-hoizey.com/" target="_blanck">https://nicolas-hoizey.com/</a>
+</li>
 </ul>

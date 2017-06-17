@@ -43,8 +43,8 @@ google_analytics: UA-101155540-1
 
 
 
-gems: [jekyll-paginate-v2]
-paginate: 5
-paginate_path: "/page:num/"
+#gems: [jekyll-paginate-v2]
+#paginate: 5
+#paginate_path: "/page:num/"
 
 
