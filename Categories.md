@@ -7,7 +7,7 @@ permalink: /categories/
 
 ---
 
-<div>
+
 <div>
 <ul>
 <li>
@@ -35,4 +35,3 @@ permalink: /categories/
 </ul>
 </div>
 
-</div>
