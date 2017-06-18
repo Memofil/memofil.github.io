@@ -7,10 +7,21 @@ permalink: /categories/
 
 ---
 
-
+<div class="card">
 <ul>
-<li  markdown="1">
+<li class="card" markdown="1">
 ![Logo Jekyll]({{site.url}}/assets/images/categories/jekyll-logo.png )
 </li>
+{% for post in site.posts limit:6 %}
+{% if post.categories contains 'Jekyll' %}
+<li class="card">
+<h3>
+<a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}<small>{{ post.date | date_to_string }}</small></a>
+</h3>
+</li>
+{% endif %}
+{% endfor %}
 </ul>
+</div>
+
 

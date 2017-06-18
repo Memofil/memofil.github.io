@@ -40,6 +40,10 @@ permalink: /liens/
 </ul>
 
 
+<h2> Ressources  </h2>
+
+http://www.hongkiat.com/blog/creative-css-shadows/
+
 <h3> Forums : Fils de discussion </h3>
 
 https://stackoverflow.com/questions/25463865/in-jekyll-how-do-i-grab-a-posts-first-image/25465910#25465910
