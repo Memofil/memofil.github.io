@@ -56,6 +56,13 @@ pgrep -c rsync || rsync -ssh -avz /home/pi/Documents user@IP.ADRESS:"PI/backup/"
 
 
 </li>
+<li>
+Pour que la connexion soit automatique sans que la rpi redemande le mot de passe, il est essentiel d'utiliser les clefs SSH
+{% highlight ruby %}
+ssh-keygen -t dsa
+ssh-copy-id nom@monserveur
+{% endhighlight %}
+</li>
 
 </ul>
 <strong>Sources :</strong>

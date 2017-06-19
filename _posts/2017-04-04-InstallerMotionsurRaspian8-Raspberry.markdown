@@ -20,6 +20,9 @@ echo "bcm2835-v4l2" | sudo tee -a /etc/modules
 sudo aptitude install python-tornado python-jinja2 python-imaging motion ffmpeg v4l-utils
 {% endhighlight %}
 </li>
+<li> Il faut enfin que le module camera soit bien activé dans raspi-config
+</li>
+
 </ul>
 
 

@@ -34,7 +34,7 @@ tar -zxvf unison-2.48.1.tar.gz
 cd unison-2.48.1/
 sudo make UISTYLE=text
 #On deplace ensuite le dossier compilé dans le répertoire des applications perso "/opt", puis on génére un lien symbolique
-sudo cp -r unison-2.48.1 /opt/
+sudo cp -r ../unison-2.48.1 /opt/
 cd /usr/bin
 sudo ln -s /opt/unison-2.48.1/unison unison
 {% endhighlight %}
