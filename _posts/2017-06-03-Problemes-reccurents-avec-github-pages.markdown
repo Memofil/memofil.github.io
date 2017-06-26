@@ -1,6 +1,6 @@
 ---
 layout: default
-title:  "Problème reccurent avec Github Pages"
+title:  "Problèmes reccurents avec Github Pages"
 date:   2017-05-22 00:09:36 +0200
 categories: Github Pages
 ---
@@ -101,3 +101,20 @@ Sources :
 https://github.com/pages-themes/dinky
 
 http://literaturegeek.com/2017/02/04/building-research-website-with-jekyll-githubpages-theming
+
+
+
+
+## Deux comptes github : Problème avec les clefs ssh ##
+ Après la configuration d'un nouveau compte github sur le même pc, on a du créer une nouvelle clef ssh. voir l'article Comment créer deux comptes github . Cependant le nouveau compte crée fonctionne mais plus le premier. Si l'host ( configuré dans `.ssh/config` est github-primaire , en tapant : `ssh -T git@github-primaire`, on obtient : 
+
+```SHELL
+Connection to github.com closed by remote host.
+
+```
+
+Face à ce probleme de clef, le mieux est d'affecter une clef speciale pour chaque compte github sans utiliser celle de base (cad : id_rsa). Puis supprimer celles en trop ou inutile. Sous Ubuntu 16.04, la solution qui a marché est d'ouvrir l'application : "Mots de passe et clefs" ( passwords and keys) et de les supprimer à la main.
+
+La solution peut se trouver à cette adresse :
+
+[https://stackoverflow.com/questions/25464930/how-to-remove-a-ssh-key](https://stackoverflow.com/questions/25464930/how-to-remove-a-ssh-key){:target="_blanck"}
