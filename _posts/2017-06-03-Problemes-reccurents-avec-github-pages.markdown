@@ -5,7 +5,9 @@ date:   2017-05-22 00:09:36 +0200
 categories: Github Pages
 ---
 
-<h3>Mon site ne s'affiche plus : La page est blanche</h3>
+# Problèmes reccurents avec Github Pages #
+
+## Mon site ne s'affiche plus : La page est blanche##
 
 Apres avoir voulu changer de template GithubPages, la page d'acceuil de mon site statique est devenu blanche.
 Comment donc récupérer un site fonctionnel?
@@ -80,7 +82,7 @@ On tente ensuite de démarrer le serveur
 Si le terminal ne renvoi aucune erreurs, le site est alors disponible à l'adresse : <code>http://localhost:4000</code>
 
 
-<h3>Erreur numéro 1 :</h3>
+<h3>Erreur :</h3>
 
  {% highlight ruby %}
 Configuration file: /home/fabien/git/monsite.github.io/_config.yml
@@ -105,7 +107,7 @@ http://literaturegeek.com/2017/02/04/building-research-website-with-jekyll-githu
 
 
 
-## Deux comptes github : Problème avec les clefs ssh ##
+## Deux comptes github, Problème avec les clefs ssh ##
  Après la configuration d'un nouveau compte github sur le même pc, on a du créer une nouvelle clef ssh. voir l'article Comment créer deux comptes github . Cependant le nouveau compte crée fonctionne mais plus le premier. Si l'host ( configuré dans `.ssh/config` est github-primaire , en tapant : `ssh -T git@github-primaire`, on obtient : 
 
 ```SHELL
@@ -118,3 +120,18 @@ Face à ce probleme de clef, le mieux est d'affecter une clef speciale pour chaq
 La solution peut se trouver à cette adresse :
 
 [https://stackoverflow.com/questions/25464930/how-to-remove-a-ssh-key](https://stackoverflow.com/questions/25464930/how-to-remove-a-ssh-key){:target="_blanck"}
+
+
+Attention : Voir aussi la suite ci- desous, car mofifier ".git/config" peut aboutir a de nouveaux bugs.
+
+## Apres une modification du fichier ".git/config", les mises à jour ne fonctionnent plus ( localement et en ligne )##
+
+Lorsque je tape `bundle exec Jekyll serve `, j'obtiens : 
+
+
+```SHELL
+ No repo name found. Specify using PAGES_REPO_NWO environment variables, 'repository' in your configuration, or set up an 'origin' git remote pointing to your github.com repository.
+``` 
+ 
+ Une solution (proposée [ici](https://github.com/jekyll/jekyll/issues/4705){:target="_blanck"}) consiste à indiquer le chemin du dépot dans le fichier `_config.yml`. 
+ Dans le cas d'une page GitHub, on ajoutera alors la ligne suivante : `repository: username/username.github.io`.
