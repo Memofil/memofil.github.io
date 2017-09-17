@@ -24,7 +24,7 @@ github_username:  Memofil
 
 # Build settings
 markdown: kramdown
-theme: jekyll-theme-tactile
+theme: icibaTheme
 gems:
   - jekyll-feed
 exclude:
@@ -49,3 +49,7 @@ google_analytics: UA-101155540-1
 
 #Ajouter le chemin du repertoire sur git
 repository: Memofil/memofil.github.io
+
+##Bootstrap
+sass:
+    sass_dir: _sass

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+  <head>
+    {% include meta.html %}
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+    <link rel="stylesheet" type="text/css" href="{{ '/assets/css/print.css' | relative_url }}" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <title>{{ site.title | default: site.github.repository_name }} by {{ site.github.owner_name }}</title>
+  </head>
+
+  <body>
+  {% include navigation.html %}
+    <div id="container">
+      <div class="inner">
+        <section id="main_content">
+          {{ content }}
+        </section>
+
+        <footer> 
+        {% include footer.html %}
+        </footer>
+
+      </div>
+    </div>
+
+    {% include analytics.html %}
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          1 of 2
+        </div>
+        <div class="col">
+          1 of 2
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          1 of 3
+        </div>
+        <div class="col">
+          1 of 3
+        </div>
+        <div class="col">
+          1 of 3
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>
