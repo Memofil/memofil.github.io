@@ -50,7 +50,7 @@ systemctl restart apache2.service
 Votre owncloud est pret à etre configurer via le navigateur internet à l'adresse : `192.168.1.80/owncloud/`
 
 Vous pouvez alors créer un compte admin .
-Pour configurer la partie concernant la base de donnée crée , on aura : 
+Pour configurer la partie concernant la base de donnée, on aura : 
 
 ```
 Utilisateur : nomUtilisateur
