@@ -38,5 +38,19 @@ permalink: /categories/
 {% endif %}
 {% endfor %}
 </ul>
+<ul>
+<li class="card" markdown="1">
+![Logo raspberry]({{site.url}}/assets/images/categories/linux-crystal-Tux.png )
+</li>
+{% for post in site.posts limit:6 %}
+{% if post.categories contains 'Linux' %}
+<li class="card">
+<p class="card">
+<a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+</p>
+</li>
+{% endif %}
+{% endfor %}
+</ul>
 </div>
 </div>
