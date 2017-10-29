@@ -14,7 +14,7 @@ permalink: /categories/
 </li>
 {% for post in site.posts limit:6 %}
 {% if post.categories contains 'Jekyll' %}
-<li >
+<li class="card">
 <h3>
 <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
 </h3>
@@ -23,7 +23,7 @@ permalink: /categories/
 {% endfor %}
 </ul>
 </div>
-<div>
+<div class="card">
 <ul>
 <li class="card" markdown="1">
 ![Logo raspberry]({{site.url}}/assets/images/categories/rpi-logo.png )
@@ -31,9 +31,9 @@ permalink: /categories/
 {% for post in site.posts limit:6 %}
 {% if post.categories contains 'Raspberry' %}
 <li class="card">
-<h3>
+<p class="card">
 <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
-</h3>
+<p>
 </li>
 {% endif %}
 {% endfor %}
