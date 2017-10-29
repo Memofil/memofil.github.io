@@ -26,7 +26,7 @@ permalink: /categories/
 <div class="card">
 <ul>
 <li class="card" markdown="1">
-![Logo Jekyll]({{site.url}}/assets/images/categories/rpi-logo.png )
+![Logo raspberry]({{site.url}}/assets/images/categories/rpi-logo.png )
 </li>
 {% for post in site.posts limit:6 %}
 {% if post.categories contains 'raspberry' %}
