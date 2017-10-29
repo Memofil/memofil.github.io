@@ -39,6 +39,7 @@ permalink: /categories/
 {% endif %}
 {% endfor %}
 </ul>
+<div class="card">
 <ul>
 <li class="card" markdown="1">
 ![Logo raspberry]({{site.url}}/assets/images/categories/linux-crystal-Tux.png )
@@ -53,6 +54,7 @@ permalink: /categories/
 {% endif %}
 {% endfor %}
 </ul>
+</div>
 </div>
 <div >
 {% assign tags = site.tags | sort %}
