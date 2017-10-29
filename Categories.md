@@ -51,7 +51,7 @@ permalink: /categories/
 <div class="card">
 <ul>
 <li class="card" markdown="1">
-![Logo raspberry]({{site.url}}/assets/images/categories/linux-crystal-Tux.png )
+![Logo Tux]({{site.url}}/assets/images/categories/linux-crystal-Tux.png )
 </li>
 {% for post in site.posts limit:6 %}
 {% if post.categories contains 'Linux' %}
