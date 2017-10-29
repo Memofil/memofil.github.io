@@ -8,12 +8,12 @@ permalink: /categories/
 ---
 <div class="cardBox">
 <div >
-Tags
-
-{% for tag in page.tags %}
-    <a href="/tags/{{ tag }}/">{{ tag }}</a>
+<span>[
+{% for tag in posts.tags %}
+{% capture tag_name %}{{ tag }}{% endcapture %}
+<a href="/tag/{{ tag_name }}"><code class="highligher-rouge"><nobr>{{ tag_name }}</nobr></code>&nbsp;</a>
 {% endfor %}
-
+]</span>
 </div>
 <div class="card">
 <ul class="card">
