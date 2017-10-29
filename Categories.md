@@ -29,7 +29,7 @@ permalink: /categories/
 ![Logo raspberry]({{site.url}}/assets/images/categories/rpi-logo.png )
 </li>
 {% for post in site.posts limit:6 %}
-{% if post.categories contains 'raspberry' %}
+{% if post.categories contains 'Raspberry' %}
 <li class="card">
 <h3>
 <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
