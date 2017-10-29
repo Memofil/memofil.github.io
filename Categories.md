@@ -13,7 +13,7 @@ permalink: /categories/
 <li class="card" markdown="1">
 ![Logo Jekyll]({{site.url}}/assets/images/categories/jekyll-logo.png )
 </li>
-{% for post in site.posts limit:6 %}
+{% for post in site.posts limit:4 %}
 {% if post.categories contains 'Jekyll' %}
 <li class="card">
 <p class="card">
@@ -29,7 +29,7 @@ permalink: /categories/
 <li class="card" markdown="1">
 ![Logo raspberry]({{site.url}}/assets/images/categories/rpi-logo.png )
 </li>
-{% for post in site.posts limit:6 %}
+{% for post in site.posts limit:4 %}
 {% if post.categories contains 'Raspberry' %}
 <li class="card">
 <p class="card">
@@ -47,7 +47,7 @@ permalink: /categories/
 <li class="card" markdown="1">
 ![Logo raspberry]({{site.url}}/assets/images/categories/linux-crystal-Tux.png )
 </li>
-{% for post in site.posts limit:6 %}
+{% for post in site.posts limit:4 %}
 {% if post.categories contains 'Linux' %}
 <li class="card">
 <p class="card">
