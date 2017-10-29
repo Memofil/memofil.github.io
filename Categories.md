@@ -16,7 +16,7 @@ permalink: /categories/
 {% if post.categories contains 'Jekyll' %}
 <li class="card">
 <h3>
-<a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}<small>{{ post.date | date_to_string }}</small></a>
+<a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
 </h3>
 </li>
 {% endif %}
@@ -32,7 +32,7 @@ permalink: /categories/
 {% if post.categories contains 'raspberry' %}
 <li class="card">
 <h3>
-<a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}<small>{{ post.date | date_to_string }}</small></a>
+<a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
 </h3>
 </li>
 {% endif %}
