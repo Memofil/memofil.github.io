@@ -33,7 +33,7 @@ permalink: /categories/
 <li class="card">
 <p class="card">
 <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
-<p>
+</p>
 </li>
 {% endif %}
 {% endfor %}
