@@ -6,7 +6,7 @@ weight: 10
 permalink: /categories/
 
 ---
-<div>
+<div class="cardBox">
 <div class="card">
 <ul>
 <li class="card" markdown="1">
