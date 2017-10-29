@@ -294,8 +294,8 @@ li.card {
 }
 
 p.card:before {
-  //content: "";
- // display: inline-block;
+  content: "";
+  display: inline-block;
   width: 15px;
   height: 15px;
   margin-right: 5px;

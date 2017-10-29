@@ -15,9 +15,9 @@ permalink: /categories/
 {% for post in site.posts limit:6 %}
 {% if post.categories contains 'Jekyll' %}
 <li class="card">
-<h3>
+<p class="card">
 <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
-</h3>
+</p>
 </li>
 {% endif %}
 {% endfor %}
