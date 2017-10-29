@@ -8,19 +8,12 @@ permalink: /categories/
 ---
 <div class="cardBox">
 <div >
-<ul>
-{% for post in site.tags[page.tag] %}
-{% if post.lang %}
-<li lang="{{post.lang}}">
-{% else %}
-<li>
-{% endif %}
-<a href="{{ post.url }}">{{ post.title }}</a> ({{ post.date | date_to_string }})<br>
-{{ post.description }}
-<!-- Tags: {{ post.tags | join: ", " }} -->
-</li>
+<span>[
+{% for tag in posts.tags %}
+{% capture tag_name %}{{ tag }}{% endcapture %}
+<a href="/tag/{{ tag_name }}"><code class="highligher-rouge"><nobr>{{ tag_name }}</nobr></code>&nbsp;</a>
 {% endfor %}
-</ul>
+]</span>
 </div>
 <div class="card">
 <ul class="card">
