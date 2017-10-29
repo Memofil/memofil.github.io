@@ -10,15 +10,15 @@ permalink: /categories/
 <div >
 <ul>
 {% for post in site.tags[page.tag] %}
-  {% if post.lang %}
-  <li lang="{{post.lang}}">
-  {% else %}
-  <li>
-  {% endif %}
-  	<a href="{{ post.url }}">{{ post.title }}</a> ({{ post.date | date_to_string }})<br>
-  	{{ post.description }}
-  	<!-- Tags: {{ post.tags | join: ", " }} -->
-  </li>
+{% if post.lang %}
+<li lang="{{post.lang}}">
+{% else %}
+<li>
+{% endif %}
+<a href="{{ post.url }}">{{ post.title }}</a> ({{ post.date | date_to_string }})<br>
+{{ post.description }}
+<!-- Tags: {{ post.tags | join: ", " }} -->
+</li>
 {% endfor %}
 </ul>
 </div>
