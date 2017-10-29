@@ -2,8 +2,8 @@
 layout: default
 title:  "Ajouter du code javascript à une page sous Jekyll"
 date:   2017-06-14 00:09:36 +0200
-categories: Jekyll Github-Pages  javascript
-tags: Jekyll Github-Pages  javascript
+categories: Jekyll Github-Pages Javascript
+tags: Jekyll Github-Pages Javascript
 ---
 
 <h3>Javascript, Jekyll et Github Page</h3>

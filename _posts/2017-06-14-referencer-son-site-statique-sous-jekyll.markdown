@@ -4,7 +4,7 @@ title:  "Référencer son site statique sous Jekyll"
 date:   2017-06-14 10:09:36 +0200
 excerpt: Les méthodes pour bien référencer son site afin qu'il soit bien repérer par les robots google et autres moteurs de recherche
 categories: Jekyll Github-Pages  javascript referencement
-tags: Github-Pages Jekyll javascript referencement
+tags: Jekyll Github-Pages Jekyll javascript referencement
 ---
 
 
