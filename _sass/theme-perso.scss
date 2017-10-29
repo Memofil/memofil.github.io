@@ -293,7 +293,7 @@ li.card {
     list-style: none;
 }
 
-li:before {
+li.card:before {
   content: "";
   display: inline-block;
   width: 15px;
