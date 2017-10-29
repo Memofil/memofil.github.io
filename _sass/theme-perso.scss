@@ -295,12 +295,12 @@ li.card {
 
 p.card:before {
     border-radius: 7px;
-    border: 2px solid #73AD21;
+    border: 2px solid blue;
     content: "";
     display: inline-block;
     width: 15px;
     height: 15px;
     margin-right: 5px;
-    background: blue;
+    background: transparent;
   
 }
