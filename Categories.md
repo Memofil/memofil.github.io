@@ -39,6 +39,9 @@ permalink: /categories/
 {% endif %}
 {% endfor %}
 </ul>
+
+</div>
+<div class="cardBox">
 <div class="card">
 <ul>
 <li class="card" markdown="1">
@@ -56,7 +59,7 @@ permalink: /categories/
 </ul>
 </div>
 </div>
-<div >
+<div class="cardBox">
 {% assign tags = site.tags | sort %}
 {% for tag in tags %}
  <span class="site-tag">
