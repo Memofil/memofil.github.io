@@ -7,7 +7,7 @@ permalink: /categories/
 
 ---
 <div class="cardBox">
-<div >
+<div class="cardBox">
 <span>[
 {% for tag in posts.tags %}
 {% capture tag_name %}{{ tag }}{% endcapture %}
@@ -47,6 +47,7 @@ permalink: /categories/
 {% endfor %}
 </ul>
 </div>
+<div class="cardBox">
 <div class="card">
 <ul>
 <li class="card" markdown="1">
@@ -62,5 +63,6 @@ permalink: /categories/
 {% endif %}
 {% endfor %}
 </ul>
+</div>
 </div>
 </div>
