@@ -2,7 +2,8 @@
 layout: default
 title:  "Se connecter en local sur son Rapsberry Pi via ssh"
 date:   2017-04-17 10:37:00 +0200
-categories: raspberry pi raspbian ssh 
+categories: Raspberry pi raspbian ssh 
+tags : Raspberry pi raspbian ssh
 ---
 Comment se connecter à distance sur son Rapsberry Pi via ssh en local ?
 

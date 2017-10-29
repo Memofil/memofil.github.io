@@ -3,6 +3,7 @@ layout: default
 title:  "Une IP statique pour son Raspberry PI sous Rapsbian 8 (Jessie)"
 date:   2017-05-15 12:30:00 +0200
 categories: Raspberry Raspbian Jessie
+tags : Raspberry Raspbian Jessie
 ---
 
 

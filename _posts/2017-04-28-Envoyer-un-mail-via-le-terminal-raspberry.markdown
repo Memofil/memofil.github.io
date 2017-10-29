@@ -1,8 +1,9 @@
 ---
 layout: default
-title:  "Envoyer un mail en ligne de commande sous raspbian jessie"
+title:  "Envoyer un mail en ligne de commande sous Raspbian jessie"
 date:   2017-04-28 12:30:00 +0200
-categories: Git Linux Terminal 
+categories: Linux Git Terminal 
+tags : Linux Git Terminal 
 ---
 
 Installer SSMTP, mail et mpack pour les pieces jointes

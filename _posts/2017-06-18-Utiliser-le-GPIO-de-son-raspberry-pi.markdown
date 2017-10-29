@@ -2,7 +2,8 @@
 layout: default
 title:  "Utiliser le GPIO de son raspberry pi"
 date:   2017-06-18 18:30:00 +0200
-categories: raspberry GPIO Terminal 
+categories: Raspberry GPIO Terminal 
+tags : Raspberry GPIO Terminal
 ---
  ![Les "Pins" ou broches d'un Raspberry Pi ]({{site.url}}/assets/images/posts/raspberry-pi/gpio-pins.jpg)
 <h1> Qu'est que le GPIO ? </h1>

@@ -3,6 +3,7 @@ layout: default
 title:  "Automatiser les taches de sa framboise avec Cron"
 date:   2017-05-17 18:30:00 +0200
 categories: Raspberry Pi Cron Linux Terminal 
+tags :  Raspberry Pi Cron Linux Terminal 
 ---
 
 <h3>Installation de Cron</h3>

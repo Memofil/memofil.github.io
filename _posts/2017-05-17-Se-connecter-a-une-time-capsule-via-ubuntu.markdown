@@ -2,7 +2,8 @@
 layout: default
 title:  "Se connecter à une Time Capsule via Raspberry Pi"
 date:   2017-05-17 18:30:00 +0200
-categories: Time Capsule Ubuntu VNC Linux Terminal  Raspberry Pi Raspbian 8
+categories: Raspberry
+tags: Raspberry Pi Raspbian 8 Time Capsule Ubuntu VNC Linux Terminal
 ---
 
 <h3>Pour une Raspberry Pi sous raspbian Jessie</h3>

@@ -2,7 +2,8 @@
 layout: default
 title:  "Mettre en page un site statique avec Jekyll et Github Pages"
 date:   2017-05-22 00:09:36 +0200
-categories: Github Pages Jekyll
+categories: Jekyll 
+tags : Github-Pages Jekyll
 ---
 
 # Mettre en page un site statique avec Jekyll et Github Pages

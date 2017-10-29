@@ -2,7 +2,8 @@
 layout: default
 title:  "Installer VNC viewer sur Ubuntu 16.04"
 date:   2017-05-17 18:30:00 +0200
-categories: Application Ubuntu VNC Linux Terminal 
+categories: Linux Application Ubuntu VNC  Terminal 
+tags :  Linux Application Ubuntu VNC  Terminal
 ---
 
 <h3>Installation automatique de VNC Viewer</h3>

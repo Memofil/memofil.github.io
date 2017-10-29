@@ -3,7 +3,7 @@ layout: default
 title:  "Demarrer un Arduino Uno avec un pc"
 date:   2017-06-26 8:30:00 +0200
 categories: Arduino 
-tag: Arduino Uno Ubuntu
+tags: Arduino Uno Ubuntu
 ---
 
 # Démarrer une Arduino Uno avec un pc

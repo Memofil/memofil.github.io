@@ -2,7 +2,8 @@
 layout: default
 title:  "Configurer la connexion wifi de son raspberry pi sous Raspbian 8"
 date:   2017-05-15 12:30:00 +0200
-categories: raspberry Raspbian Terminal 
+categories: Raspberry Raspbian Terminal 
+tags : Raspberry Raspbian Terminal 
 ---
 
 Afin de configurer la connexion wifi de son raspberry pi, 

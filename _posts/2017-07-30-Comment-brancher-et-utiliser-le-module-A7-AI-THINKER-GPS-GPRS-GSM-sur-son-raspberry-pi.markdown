@@ -2,7 +2,8 @@
 layout: default
 title:  "Comment brancher et utiliser le module A7 GPS/GPRS/GSM d'AI-THINKER  sur son raspberry pi"
 date:   2017-07-30 13:30:00 +0200
-categories: raspberry GPIO A7
+categories: Raspberry GPIO A7
+tags : Raspberry GPIO A7
 ---
 ## Comment brancher et utiliser le module A7 AI-THINKER GPS/GPRS/GSMI sur son Raspberry Pi ? ## 
  ![Le module A20 - AI-Thinker ]({{site.url}}/assets/images/posts/raspberry-pi/A20-AI-THINKER-module/A20-AI-THINKER-GPRS-GSM-WIFI-module-with-antenna.jpg)

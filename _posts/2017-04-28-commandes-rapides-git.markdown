@@ -3,6 +3,7 @@ layout: default
 title:  "Commandes rapides Git"
 date:   2017-04-28 10:30:00 +0200
 categories: Git Linux Terminal 
+tags : Git Linux Terminal 
 ---
 
 <h2>Commandes rapides Git </h2>

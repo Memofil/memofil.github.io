@@ -3,7 +3,7 @@ layout: default
 title:  "Créer un site statique avec Jekyll"
 date:   2017-09-09 8:30:00 +0200
 categories: Jekyll 
-tag: Jekyll ftp 
+tags: Jekyll ftp 
 ---
 
 # Jekyll : Pour commencer

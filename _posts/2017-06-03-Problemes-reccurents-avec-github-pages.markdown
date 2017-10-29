@@ -3,6 +3,7 @@ layout: default
 title:  "Problèmes reccurents avec Github Pages"
 date:   2017-05-22 00:09:36 +0200
 categories: Github Pages
+tags : Github-Pages
 ---
 
 # Problèmes reccurents avec Github Pages #

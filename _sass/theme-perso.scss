@@ -294,13 +294,13 @@ li.card {
 }
 
 p.card:before {
-    border-radius: 7px;
-    border: 2px solid blue;
+    border-radius: 4px;
+    border: 3px solid red;
     content: "";
     display: inline-block;
-    width: 15px;
-    height: 15px;
-    margin-right: 5px;
+    width: 10px;
+    height: 10px;
+    margin-right: 3px;
     background: transparent;
   
 }

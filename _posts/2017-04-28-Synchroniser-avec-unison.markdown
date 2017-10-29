@@ -3,6 +3,7 @@ layout: default
 title:  "Synchroniser avec Unison"
 date:   2017-04-28 12:30:00 +0200
 categories: Linux Unison Terminal 
+tags : Linux Unison Terminal 
 ---
 
 <h3>Installer Unison</h3>

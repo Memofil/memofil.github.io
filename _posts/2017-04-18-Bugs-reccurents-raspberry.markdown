@@ -3,6 +3,7 @@ layout: default
 title:  "Bugs reccurents - Raspberry PI"
 date:   2017-04-18 00:09:36 +0200
 categories: Bug Raspberry Raspbian
+tags : Bug Raspberry Raspbian
 ---
 Bugs Reccurents sur Raspbian Jessie
 

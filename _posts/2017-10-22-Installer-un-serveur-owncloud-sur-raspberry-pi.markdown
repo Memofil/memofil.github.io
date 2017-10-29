@@ -3,7 +3,7 @@ layout: default
 title:  "Installer un serveur Owncloud sur rapsberry pi sous Raspbian 8"
 date:   2017-10-22 14:30:00 +0200
 categories: Raspberry Raspbian
-tag: Raspberry Raspbian Jessie Installation 
+tags: Raspberry Raspbian Jessie Installation 
 ---
 
 

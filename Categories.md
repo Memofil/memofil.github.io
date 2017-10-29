@@ -7,6 +7,14 @@ permalink: /categories/
 
 ---
 <div class="cardBox">
+<div >
+Tags
+
+{% for tag in page.tags %}
+    <a href="/tags/{{ tag }}/">{{ tag }}</a>
+{% endfor %}
+
+</div>
 <div class="card">
 <ul class="card">
 <li class="card" markdown="1">
