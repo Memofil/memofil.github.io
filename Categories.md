@@ -7,17 +7,7 @@ permalink: /categories/
 
 ---
 <div class="cardBox">
-<div >
-{% assign tags = site.tags | sort %}
-{% for tag in tags %}
- <span class="site-tag">
-<a href="/tag/{{ tag | first | slugify }}/"
-style="font-size: {{ tag | last | size  |  times: 4 | plus: 80  }}%">
-{{ tag[0] | replace:'-', ' ' }} ({{ tag | last | size }})
-</a>
-</span>
-{% endfor %}
-</div>
+
 <div class="card">
 <ul class="card">
 <li class="card" markdown="1">
@@ -63,5 +53,16 @@ style="font-size: {{ tag | last | size  |  times: 4 | plus: 80  }}%">
 {% endif %}
 {% endfor %}
 </ul>
+</div>
+<div >
+{% assign tags = site.tags | sort %}
+{% for tag in tags %}
+ <span class="site-tag">
+<a href="/tag/{{ tag | first | slugify }}/"
+style="font-size: {{ tag | last | size  |  times: 4 | plus: 80  }}%">
+{{ tag[0] | replace:'-', ' ' }} ({{ tag | last | size }})
+</a>
+</span>
+{% endfor %}
 </div>
 </div>
