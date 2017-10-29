@@ -8,7 +8,7 @@ permalink: /categories/
 ---
 <div class="cardBox">
 <div class="card">
-<ul>
+<ul class="card">
 <li class="card" markdown="1">
 ![Logo Jekyll]({{site.url}}/assets/images/categories/jekyll-logo.png )
 </li>
