@@ -263,11 +263,20 @@ nav {
 
 
 /*Mise en page des articles et page */
-div.cardBox {
+.cardBox  {
+     display: inline-block;
     width: 1000px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     text-align: center;
 }
+
+.cardBox div{
+     display: inline-block;
+    width: 1000px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+}
+
 
 div.card {
     display: inline-block;
