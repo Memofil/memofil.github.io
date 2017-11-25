@@ -14,7 +14,7 @@ Pour le calcul des factorielles :
 echo "Entrer un entier: "
 read n
  
-# on définit la fonction factorielle
+## on définit la fonction factorielle
 fact="define f (x) {
 i=x
 fact=1
@@ -25,7 +25,7 @@ i=i-1
 return fact
 }"
  
-# On appelle la fonction fact définie avec un n en paramètre et on fait un pipe avec bc
+## On appelle la fonction fact définie avec un n en paramètre et on fait un pipe avec bc
 factorial=`echo "$fact;f($n)" | bc -l`
  
 echo "$n! = $factorial"
@@ -46,3 +46,20 @@ do
 done
 ```
 
+# Utiliser un script Bash en argument d'un autre script
+
+Script 1 :
+```
+echo "Script 1 avec les arguments:"
+echo "$1" & echo "$2"
+echo "$#"
+./script2.sh "$1" "$2"
+```
+
+Script 2 :
+```
+echo "Voici les arguments reçus depuis le script 1:"
+echo "$1"
+echo "$2"
+echo "$#"
+```
