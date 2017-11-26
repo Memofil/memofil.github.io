@@ -94,3 +94,26 @@ Enfin il faut faire un <code>sudo reboot</code> ou bien (plus rapide) <code>sudo
 <a href="https://www.raspberrypi.org/forums/viewtopic.php?f=36&t=127183" target="_Blanck">https://www.raspberrypi.org/forums/viewtopic.php?f=36&t=127183</a>
 </li>
 </ul>
+
+
+Remarques :
+
+Après la configuration, il arrive que la connection internet soit perdue bien que la raspi soit visible sur le réseau. L'erreur provient généralement d'une mauvaise configuration du fichier interface. 
+Dans mon cas précis, sans avoir pris le temps de comprendre, il y a [une autre option de configuration](https://elinux.org/Configuring_a_Static_IP_address_on_your_Raspberry_Pi){:target="_blank"} qui fonctionne mieux que celle dessus ( que je conserve le temps de comprendre les différences) :
+
+Dans le fichier `/etc/network/interface`, on ajoute les lignes suivantes :
+
+```
+auto lo
+
+iface lo inet loopback
+iface eth0 inet dhcp
+
+allow-hotplug wlan0
+iface wlan0 inet manual
+wpa-roam /etc/wpa_supplicant/wpa_supplicant.conf
+iface default inet dhcp
+
+```
+
+
