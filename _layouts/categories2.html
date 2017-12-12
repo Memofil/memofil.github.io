@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+<head>
+  {% include meta.html %}
+  <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+  <link rel="stylesheet" type="text/css" href="{{ '/assets/css/print.css' | relative_url }}" media="print">
+  <!--[if lt IE 9]>
+  <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <title>{{ site.title | default: site.github.repository_name }} by {{ site.github.owner_name }}</title>
+</head>
+
+<body>
+  {% include navigation.html %}
+  <div id="container">
+    <div class="inner">
+      <section id="main_content">
+        <div class="cardBox">
+          <div class="card">
+            <ul class="card">
+              <li class="card" markdown="1">
+                <img src="/assets/images/categories/jekyll-logo.png"  title="Jekyll">
+                <!--![Logo Jekyll]({{site.url}}/assets/images/categories/jekyll-logo.png )-->
+              </li>
+              {% for post in site.posts limit:4 %}
+              {% if post.tags contains 'Jekyll' %}
+              <li class="card">
+                <p class="card">
+                  <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+                </p>
+              </li>
+              {% endif %}
+              {% endfor %}
+            </ul>
+          </div>
+          <div class="card">
+            <ul class="card">
+              <li class="card" markdown="1">
+                  <img src="/assets/images/categories/rpi-logo.png" title="Logo Raspberry Pi">
+              </li>
+              {% for post in site.posts limit:4 %}
+              {% if post.tags contains 'Raspberry' %}
+              <li class="card">
+                <p class="card">
+                  <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+                </p>
+              </li>
+              {% endif %}
+              {% endfor %}
+            </ul>
+          </div>
+          <div class="cardBox">
+            <div class="card">
+              <ul class="card">
+                <li class="card" markdown="1">
+                    <img src="/assets/images/categories/linux-crystal-Tux.png" title="Logo Linux Tux">
+                </li>
+                {% for post in site.posts['Linux'] %}
+                {% if post.tags contains 'Linux' %}
+                <li class="card">
+                  <p class="card">
+                    <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+                  </p>
+                </li>
+                {% endif %}
+                {% endfor %}
+              </ul>
+            </div>
+            <div class="card">
+              <ul class="card">
+                <li class="card" markdown="1">
+                    <img src="/assets/images/categories/linux-crystal-Tux.png" title="Logo Linux Tux">
+                </li>
+                {% for post in site.posts %}
+                {% if post.tags['Python'] %}
+                <li class="card">
+                  <p class="card">
+                    <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+                  </p>
+                </li>
+                {% endif %}
+                {% endfor %}
+              </ul>
+
+            </div>
+          </div>
+          <div class="cardBox">
+            {% assign tags = site.tags | sort %}
+            {% for tag in tags %}
+            <span class="site-tag">
+              <a href="/tag/{{ tag | first | slugify }}/"
+              style="font-size: {{ tag | last | size  |  times: 4 | plus: 80  }}%">
+              {{ tag[0] | replace:'-', ' ' }} ({{ tag | last | size }})
+            </a>
+          </span>
+          {% endfor %}
+        </div>
+      </div>
+
+      {{ content }}
+    </section>
+
+    <footer>
+      {% include footer.html %}
+    </footer>
+
+  </div>
+</div>
+
+{% include analytics.html %}
+
+</body>
+</html>

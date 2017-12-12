@@ -137,3 +137,7 @@ sudo gem install bootstrap-sass
 + [http://literaturegeek.com/2017/02/04/building-research-website-with-jekyll-githubpages-theming](http://literaturegeek.com/2017/02/04/building-research-website-with-jekyll-githubpages-theming){:target="_blank"}
 + [http://veithen.github.io/2015/03/26/jekyll-bootstrap.html](http://veithen.github.io/2015/03/26/jekyll-bootstrap.html){:target="_blank"}
 + [https://kvurd.com/blog/my-jekyll-blog-setup-bootstrap-sass-pygments/](https://kvurd.com/blog/my-jekyll-blog-setup-bootstrap-sass-pygments/){:target="blank"}
++ [https://blog.webjeda.com/jekyll-categories/](https://blog.webjeda.com/jekyll-categories/){:target="_blank"}
++ [http://longqian.me/2017/02/09/github-jekyll-tag/](http://longqian.me/2017/02/09/github-jekyll-tag/){:target="_blank"}
++ [https://css-tricks.com/snippets/css/a-guide-to-flexbox/](https://css-tricks.com/snippets/css/a-guide-to-flexbox/){:target="_blank"}
++ [https://www.w3schools.com/css/css3_flexbox.asp](https://www.w3schools.com/css/css3_flexbox.asp){:target="_blank"}

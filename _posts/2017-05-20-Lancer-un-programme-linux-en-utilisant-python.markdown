@@ -2,8 +2,8 @@
 layout: default
 title:  "Lancer un programme linux en utilisant python"
 date:   2017-05-20 00:09:36 +0200
-categories: Python Linux  Bash Shell 
-tags : Python  Bash Shell 
+categories: [Python, Linux, Bash, Shell] 
+tags : [Python, Linux, Bash, Shell] 
 ---
 
 

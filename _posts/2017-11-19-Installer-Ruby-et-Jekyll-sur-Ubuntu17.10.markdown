@@ -2,8 +2,8 @@
 layout: default
 title:  "2017-11-19-Installer Ruby et Jekyll sur Ubuntu 17.10"
 date:   2017-11-19 00:09:36 +0200
-categories: Jekyll Ruby 
-tags : Jekyll Ruby Ubuntu Linux
+categories: [Jekyll, Ruby] 
+tags : [Jekyll, Ruby, Ubuntu, Linux]
 ---
 
 # Installer Ruby et Jekill 

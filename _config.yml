@@ -24,7 +24,7 @@ github_username:  Memofil
 
 # Build settings
 markdown: kramdown
-theme: icibaTheme
+#theme: icibaTheme
 gems:
   - jekyll-feed
 exclude:

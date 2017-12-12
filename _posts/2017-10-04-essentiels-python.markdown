@@ -1,9 +1,9 @@
 ---
 layout: default
-title:  "Essentiels - Python "
-date:   2017-10-04 00:09:36 +0200
+title: "Essentiels - Python"
+date: 2017-10-04 00:09:36 +0200
 categories: Python 
-tags: Python 
+tags: Python
 ---
 
 # Essentiels - Python

@@ -11,7 +11,7 @@ tag: Linux Ubuntu Shell
 Pour créer un icone personalisé  vous devez connaître le chemin qui mene à l'application et à l'image qui servira d'icone
 
 1. Depuis le dossier personnel, se déplacer dans le répertoire caché ./local/share/applications
-2. Ouvrir un nouveau document  et copier*coller le code suivant:
+2. Créer un fichier `.desktop`  et copier - coller le code suivant:
 
 ```SHELL
 
@@ -34,6 +34,12 @@ Icon=/home/chemin_vers_licon/icon.xpm
 Terminal=false
 
 ```
+et le rendre executable : 
+
+```
+chmod +x .desktop
+```
+# Créer un lien symbolique
 
 Dans le cas où l'application ne peut pas être appelée  par le terminal sans être dans son propre répertoire , il faudra créer un lien symbolique :
 
@@ -41,3 +47,12 @@ Dans le cas où l'application ne peut pas être appelée  par le terminal sans �
 sudo ln -s /home/username/chemin_vers_l_application /usr/bin
 ```
 
+# Ou ajouter le répertoire eclipse aux chemins globaux via `export PATH`
+
+
+Dans `.profile`, ajouter : 
+
+```
+## mon_Application path variable
+export PATH=$PATH:/home/user/chemin/de/mon_Application/
+```

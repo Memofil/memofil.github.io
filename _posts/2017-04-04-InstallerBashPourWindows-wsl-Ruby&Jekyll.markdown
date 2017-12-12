@@ -2,8 +2,8 @@
 layout: default
 title:  "Installer Bash pour Windows 10, Ruby et Jekyll"
 date:   2017-04-04 00:09:36 +0200
-categories: Jekyll Ruby 
-tags : Jekyll Ruby update bash windows 10 wsl
+categories: [Jekyll, Ruby] 
+tags : [Jekyll, Ruby, Bash, Windows, WSL]
 ---
 Ajouter Bash, Ruby et Jekill sur windows 10
 
