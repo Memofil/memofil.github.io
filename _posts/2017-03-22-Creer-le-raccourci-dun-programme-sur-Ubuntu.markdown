@@ -34,12 +34,12 @@ Icon=/home/chemin_vers_licon/icon.xpm
 Terminal=false
 
 ```
-et le rendre executable : 
+3. le rendre executable : 
 
 ```
 chmod +x .desktop
 ```
-# Créer un lien symbolique
+## Créer un lien symbolique
 
 Dans le cas où l'application ne peut pas être appelée  par le terminal sans être dans son propre répertoire , il faudra créer un lien symbolique :
 
@@ -47,7 +47,7 @@ Dans le cas où l'application ne peut pas être appelée  par le terminal sans �
 sudo ln -s /home/username/chemin_vers_l_application /usr/bin
 ```
 
-# Ou ajouter le répertoire eclipse aux chemins globaux via `export PATH`
+## Ou ajouter le répertoire eclipse aux chemins globaux via `export PATH`
 
 
 Dans `.profile`, ajouter : 
