@@ -10,7 +10,7 @@ tag: Linux Ubuntu Shell
 
 Pour créer un icone personalisé  vous devez connaître le chemin qui mene à l'application et à l'image qui servira d'icone
 
-1. Depuis le dossier personnel, se déplacer dans le répertoire caché ./local/share/applications
+1. Depuis le dossier personnel, se déplacer dans le répertoire caché `./local/share/applications`
 2. Créer un fichier `.desktop`  et copier - coller le code suivant:
 
 ```SHELL
