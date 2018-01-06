@@ -9,15 +9,9 @@ $link-hover-color: #BDBDBD;
 $toggle-color: #000000;
 
 
-
-
-
 /* Barre de navigation
-================================================== 
+==================================================
 */
-
-
-
 
 nav {
   float: right;
@@ -44,7 +38,7 @@ nav {
         &:not(:only-child):after {
         padding-left: 0px;
         content: ' ▾';
-        } 
+        }
       }
       ul li {
        // min-width: 190px;
@@ -117,12 +111,12 @@ nav {
 @media only screen and (max-width: $breakpoint) {
   .nav-mobile {
     display: block;
-    
+
   }
    nav {
-    
+
     width: 80%;
-    
+
     padding: $nav-height 10% 15px;
     ul {
         padding-top:2px;
@@ -140,15 +134,15 @@ nav {
       }
     }
   }
-  
+
  .nav-dropdown {
    position: static;
   }
 
 .nav-logo{
-    
+
 }
- 
+
 .brand {
   position: absolute;
   //padding-left: 50%;
@@ -157,13 +151,13 @@ nav {
   line-height: 30px;
   text-transform: uppercase;
   font-size: 1em;
-  
+
  // a,
   //a:visited {
    // color: $nav-font-color;
     //text-decoration: none;
  // }
-} 
+}
 
 .left {
     float: left;
@@ -188,7 +182,7 @@ nav {
         color: #6495ED;
         letter-spacing: -1px;
 }
-    
+
 }
 }
 
@@ -219,17 +213,13 @@ nav {
         color: #6495ED;
         letter-spacing: -1px;
 }
-    
+
 }
-
-
-
 
 
 @media screen and (min-width: $breakpoint) {
   .nav-list {
     display: block !important;
-    
   }
 }
 
@@ -264,9 +254,7 @@ nav {
 
 /*Mise en page des articles et page */
 .cardBox  {
-    
     width: 100%;
-
 }
 
 .cardBox div{
@@ -288,7 +276,7 @@ div.card {
 
 ul.card {
     padding-top: 5px;
-   height: 400px;
+    height: 400px;
 }
 
 li.card {
@@ -306,9 +294,7 @@ p.card:before {
     height: 10px;
     margin-right: 3px;
     background: transparent;
-  
 }
-
 
 .site-tag a {
     display: inline-block;
@@ -316,5 +302,3 @@ p.card:before {
     margin-left : 6px;
     box-shadow: 0 1px 2px -1px hsl(0, 0%, 40%), 0px 1px 3px -2px black;
 }
-
-
