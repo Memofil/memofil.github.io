@@ -1,17 +1,26 @@
 
+
+
 /*Variables*/
 $content-width: 1000px;
 $breakpoint: 800px;
-$nav-height: 50px;
+$nav-height: 25px;
 $nav-background: #262626;
 $nav-font-color: #000000;
 $link-hover-color: #BDBDBD;
 $toggle-color: #000000;
+$blue-text-color : #1c24b2;
+
+
+
 
 
 /* Barre de navigation
 ==================================================
 */
+
+
+
 
 nav {
   float: right;
@@ -21,9 +30,9 @@ nav {
     padding: 0;
     padding-left: 0px;
     li {
-        list-style: none;
-        float: left;
-        position: relative;
+      list-style: none;
+      float: left;
+      position: relative;
       a {
         display: block;
         padding: 0 5px;
@@ -36,12 +45,12 @@ nav {
           color: $nav-font-color;
         }
         &:not(:only-child):after {
-        padding-left: 0px;
-        content: ' ▾';
+          padding-left: 0px;
+          content: ' ▾';
         }
       }
       ul li {
-       // min-width: 190px;
+        // min-width: 190px;
         & a {
           padding: 5px;
           line-height: 20px;
@@ -113,18 +122,18 @@ nav {
     display: block;
 
   }
-   nav {
+  nav {
 
     width: 80%;
 
     padding: $nav-height 10% 15px;
     ul {
-        padding-top:2px;
+      padding-top:2px;
       display: none;
       li {
         float: none;
         text-align:center;
-         a {
+        a {
           padding: 15px;
           line-height: 20px;
         }
@@ -135,92 +144,98 @@ nav {
     }
   }
 
- .nav-dropdown {
-   position: static;
+  .nav-dropdown {
+    position: static;
   }
 
-.nav-logo{
+  .nav-logo{
 
-}
+  }
 
-.brand {
-  position: absolute;
-  //padding-left: 50%;
-  left:0px;
-  float: left;
-  line-height: 30px;
-  text-transform: uppercase;
-  font-size: 1em;
+  .brand {
+    position: absolute;
+    //padding-left: 50%;
+    left:0px;
+    float: left;
+    line-height: 30px;
+    text-transform: uppercase;
+    font-size: 1em;
 
- // a,
-  //a:visited {
-   // color: $nav-font-color;
+    // a,
+    //a:visited {
+    // color: $nav-font-color;
     //text-decoration: none;
- // }
-}
+    // }
+  }
 
-.left {
+  .left {
     float: left;
     list-style: none;
     font-size: 0.8em;
-}
+  }
 
-.right {
+  .right {
     float: right;
     list-style: none;
     h1 {
-        font-family: 'Chivo', 'Helvetica Neue', Helvetica, Arial, serif;
-        font-size: 28px; font-weight: 900;
-        line-height: 1em;
-        color: #303030;
-        letter-spacing: -1px;
+      font-family: 'Chivo', 'Helvetica Neue', Helvetica, Arial, serif;
+      font-size: 28px; font-weight: 900;
+      line-height: 1em;
+      color: #303030;
+      letter-spacing: -1px;
     }
     h2 {
-        font-size: 12px;
-        font-weight: normal;
-        line-height: 1em;
-        color: #6495ED;
-        letter-spacing: -1px;
-}
+      font-size: 12px;
+      font-weight: normal;
+      line-height: 1em;
+      color: #6495ED;
+      letter-spacing: -1px;
+    }
 
-}
+  }
 }
 
 
 
 
 .left {
-    float: left;
-    list-style: none;
-    font-size: 0.8em;
+  float: left;
+  list-style: none;
+  font-size: 0.8em;
 }
 
 .right {
-    float: right;
-    list-style: none;
-    font-size: 0.6em;
-    h1 {
-        font-family: 'Chivo', 'Helvetica Neue', Helvetica, Arial, serif;
-        font-size: 30px; font-weight: 900;
-        line-height: 1.1;
-        color: #303030;
-        letter-spacing: -1px;
-    }
-    h2 {
-        font-size: 12px;
-        font-weight: normal;
-        line-height: 0.9;
-        color: #6495ED;
-        letter-spacing: -1px;
-}
+  float: right;
+  list-style: none;
+  font-size: 0.6em;
+  h1 {
+    font-family: 'Chivo', 'Helvetica Neue', Helvetica, Arial, serif;
+    font-size: 30px; font-weight: 900;
+    line-height: 1.1;
+    color: #303030;
+    letter-spacing: -1px;
+  }
+  h2 {
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 0.9;
+    color: #6495ED;
+    letter-spacing: -1px;
+  }
 
 }
+
+
+
 
 
 @media screen and (min-width: $breakpoint) {
   .nav-list {
     display: block !important;
+
   }
+
+
 }
 
 .navigation {
@@ -243,62 +258,324 @@ nav {
   line-height: 30px;
   text-transform: uppercase;
   font-size: 1.4em;
- // a,
+  // a,
   //a:visited {
-   // color: $nav-font-color;
-    //text-decoration: none;
- // }
+  // color: $nav-font-color;
+  //text-decoration: none;
+  // }
 }
-
-
 
 /*Mise en page des articles et page */
 .cardBox  {
-    width: 100%;
+  width: 100%;
 }
 
 .cardBox div{
-    margin-top : 10px;
-    margin-bottom : 10px;
-    float: left;
+  margin-top : 10px;
+  margin-bottom : 10px;
+  float: left;
 }
 
 
 div.card {
-    display: inline-block;
-    width: 45%;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    margin-right: 10px;
-    margin-left: 10px;
-    //text-align: center;
-    vertical-align: top;
+  display: inline-block;
+  width: 45%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-right: 10px;
+  margin-left: 10px;
+  //text-align: center;
+  vertical-align: top;
 }
 
 ul.card {
-    padding-top: 5px;
-    height: 400px;
+  padding-top: 5px;
+  // height: 400px;
 }
 
 li.card {
-    display: inline-block;
-    vertical-align: top;
-    list-style: none;
+  display: inline-block;
+  vertical-align: top;
+  list-style: none;
 }
 
 p.card:before {
-    border-radius: 4px;
-    border: 3px solid red;
-    content: "";
-    display: inline-block;
-    width: 10px;
-    height: 10px;
-    margin-right: 3px;
-    background: transparent;
+  border-radius: 4px;
+  border: 3px solid red;
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin-right: 3px;
+  background: transparent;
+
 }
 
+
+
+div.cardLeft {
+  display: inline-block;
+  width: 95%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-top: 20px;
+  //text-align: center;
+  vertical-align: top;
+  padding-top: 10px;
+}
+
+ul.cardleft {
+  padding-top: 5px;
+  // height: 400px;
+}
+
+li.cardLeft {
+  display: inline-block;
+  vertical-align: top;
+  list-style: none;
+  list-style-type:  none;
+  margin-right: 2px;
+}
+
+p.cardLeft:before {
+  border-radius: 4px;
+  border: 3px solid red;
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin-right: 3px;
+  background: transparent;
+
+}
+
+
 .site-tag a {
-    display: inline-block;
-    margin-right: 6px;
-    margin-left : 6px;
-    box-shadow: 0 1px 2px -1px hsl(0, 0%, 40%), 0px 1px 3px -2px black;
+  display: inline-block;
+  margin-right: 6px;
+  margin-left : 6px;
+  box-shadow: 0 1px 2px -1px hsl(0, 0%, 40%), 0px 1px 3px -2px black;
+}
+
+/*Mise en page des articles et page */
+.tagBox  {
+  width: 100%;
+}
+
+.tagBox div{
+  margin-top : 10px;
+  margin-bottom : 10px;
+  float: left;
+}
+
+
+div.tagBlock {
+  display: inline-block;
+  width: 100%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-right: 10px;
+  margin-left: 10px;
+  //text-align: center;
+  vertical-align: top;
+}
+
+ul.tagBlock {
+  padding-top: 5px;
+  // height: 400px;
+}
+
+li.tagBlock {
+  display: inline-block;
+  vertical-align: top;
+  list-style: none;
+}
+
+p.tagBlock:before {
+  border-radius: 4px;
+  border: 3px solid red;
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin-right: 3px;
+  background: transparent;
+
+}
+h3.tagBlock {
+
+
+}
+
+.tagBlock h3 {
+  margin: 7px 0px 4px;
+  //font-size: 14px;
+  text-transform: uppercase;
+  text-align:center;
+  color: $blue-text-color;
+}
+
+.tagBlock h3 {
+  overflow: hidden;
+  text-align: center;
+}
+.tagBlock h3:before,
+.tagBlock h3:after {
+  background-color: $blue-text-color;;
+  content: "";
+  display: inline-block;
+  height: 2px;
+  position: relative;
+  vertical-align: middle;
+  width: 50%;
+}
+.tagBlock h3:before {
+  right: 0.5em;
+  margin-left: -50%;
+}
+.tagBlock h3:after {
+  left: 0.5em;
+  margin-right: -50%;
+}
+
+.tagBlock h4 {
+  margin: 7px 0px 4px;
+
+  text-align:center;
+}
+
+.flex-container {
+  display: flex;
+  -webkit-flex-direction: row; /* Safari */
+  flex-direction:         row;
+  //justify-content: center;
+  justify-content: space-around;
+  vertical-align: top;
+  float: left;
+
+}
+
+.horizontalBlock {
+  display: flex;
+  justify-content: center;
+  //  width: 100%;
+  //flex-direction: row;
+  //  outline: 1px solid green;
+  //  flex-wrap: nowrap ;
+
+}
+
+.horizontalBlock>div {
+  background-color: #f1f1f1;
+  margin: auto;
+
+  align-self: flex-start;
+
+}
+
+
+@media screen and (max-width: $breakpoint) { // small screen
+  #container {
+    width: 100%;
+  }
+  #main-content {
+    width: 100%;
+  }
+  .inner {
+    width: auto;
+  }
+  .contentBlock {
+    clear:none;
+    width: 90%;
+    padding: 10px;
+    margin: 10px;
+  }
+
+  .flex-container {
+    -webkit-flex-direction: row; /* Safari */
+    flex-direction:         row;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .verticalBlock {
+    display: flex;
+    flex-direction: column;
+    //ouline: 2px solid white;
+    width: 90%;
+    justify-content: flex-start;
+
+    .widget-title {
+      text-align: center;
+    }
+    li.Block {
+      list-style: none;
+    }
+  }
+}
+
+
+@media screen and (min-width: $breakpoint) { // large screen
+  #container {
+    width: $content-width;
+    margin-left: auto;
+    margin-right: auto;
+
+  }
+  #main-content {
+    width: $content-width;
+    float: left;
+  }
+  .inner {
+    width: auto;
+  }
+
+  .flex-container {
+    -webkit-flex-direction: row; /* Safari */
+    flex-direction:         row;
+  }
+
+  .verticalBlock {
+    display: flex;
+    flex-direction: column;
+    //  outline: 2px solid white;
+    width: 25%;
+    justify-content: flex-start;
+    font-size: 0.7rem;
+    //    padding: 10px;
+  }
+  .widget-title {
+    text-align: center;
+  }
+  li.Block {
+    list-style: none;
+  }
+
+  .contentBlock {
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    justify-content: flex-start;
+    padding: 10px;
+    margin: 10px;
+  }
+}
+
+/* FOOTER
+==================================================
+*/
+
+.footerBlock {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  //width: $content-width;
+  width: auto;
+  text-align: center;
+//  vertical-align: middle;
+  padding: 10px;
+  margin: 5px;
+
+  /*#downloads{
+      justify-content: center;
+      text-align: center;
+  }*/
 }
